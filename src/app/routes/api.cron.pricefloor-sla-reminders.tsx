@@ -3,13 +3,13 @@
  *
  *   GET /api/cron/pricefloor-sla-reminders
  *
- * Scheduled hourly by vercel.json. Sends one reminder email per escalation
+ * Scheduled hourly by Supabase pg_cron. Sends one reminder email per escalation
  * that has been `pending` for ≥ 24h AND hasn't been reminded within the
  * same window. Idempotency is enforced by pf_escalations.last_reminder_at
  * (see listStaleEscalations + markReminderSent).
  *
- * Auth: Vercel calls this URL directly. We check the `Authorization: Bearer
- * ${CRON_SECRET}` header (set as env var + Vercel deploy setting) to reject
+ * Auth: Supabase pg_net calls this URL directly. We check the `Authorization:
+ * Bearer ${CRON_SECRET}` header (stored in Supabase Vault and the app env) to reject
  * random public hits. If CRON_SECRET is unset, the endpoint is open — fine
  * for local dev, gated in prod by requiring the env var.
  */
