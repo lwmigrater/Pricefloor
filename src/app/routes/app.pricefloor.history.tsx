@@ -223,6 +223,11 @@ function DecisionRow({ row }: { row: QuoteDecisionRow }) {
           <Text as="p" tone="subdued" variant="bodySm">
             {lineCount} {lineCount === 1 ? "product" : "products"} · {unitCount} units
           </Text>
+          {row.buyerEmail && (
+            <Text as="p" tone="subdued" variant="bodySm">
+              Buyer: {row.buyerEmail}
+            </Text>
+          )}
         </div>
         <div className={styles.totalBlock}>
           <Text as="span" tone="subdued" variant="bodySm">

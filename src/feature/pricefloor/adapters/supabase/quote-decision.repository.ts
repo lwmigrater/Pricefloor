@@ -54,6 +54,7 @@ export interface QuoteDecisionRow {
   invoiceUrl: string | null;
   expiresAt: string | null;
   decidedAt: string;
+  buyerEmail: string | null;
 }
 
 interface RawDecisionRow {
@@ -67,7 +68,7 @@ interface RawDecisionRow {
   invoice_url: string | null;
   expires_at: string | null;
   decided_at: string;
-  pf_quote_requests?: { company_id: string };
+  pf_quote_requests?: { company_id: string; raw_input?: { shopifyCustomerEmail?: string | null } };
 }
 
 function rowFromDb(r: RawDecisionRow): QuoteDecisionRow {
@@ -82,6 +83,7 @@ function rowFromDb(r: RawDecisionRow): QuoteDecisionRow {
     invoiceUrl: r.invoice_url,
     expiresAt: r.expires_at,
     decidedAt: r.decided_at,
+    buyerEmail: r.pf_quote_requests?.raw_input?.shopifyCustomerEmail ?? null,
   };
 }
 

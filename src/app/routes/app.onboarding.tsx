@@ -75,7 +75,8 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     sort_order: p.sort_order as number,
   }));
 
-  return { plans };
+  const shopHandle = session.shop.replace(/\.myshopify\.com$/i, "");
+  return { plans, themeEditorUrl: `https://admin.shopify.com/store/${shopHandle}/themes/current/editor?context=apps` };
 };
 
 export const action = async ({ request }: ActionFunctionArgs) => {
@@ -156,7 +157,9 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       currencyCode: "USD",
       interval: "MONTHLY",
       trialDays,
-      test: process.env.NODE_ENV !== "production",
+      // Live Shopify billing must be the default. Enable test charges only
+      // explicitly for local/staging environments.
+      test: process.env.BILLING_TEST_MODE === "true",
       shop: session.shop,
     });
 
@@ -177,7 +180,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 };
 
 export default function Onboarding() {
-  const { plans } = useLoaderData<typeof loader>();
+  const { plans, themeEditorUrl } = useLoaderData<typeof loader>();
   const fetcher = useFetcher<typeof action>();
 
   const [language, setLanguage] = useState("en");
@@ -212,6 +215,24 @@ export default function Onboarding() {
               value={language}
               onChange={setLanguage}
             />
+          </BlockStack>
+        </Card>
+      ),
+    },
+    {
+      title: "Add the storefront quote button",
+      description:
+        "Open your theme editor and enable the Pricefloor app embed or add the quote button block to a product section.",
+      canProceed: true,
+      renderContent: () => (
+        <Card>
+          <BlockStack gap="300">
+            <Text as="p">
+              In Shopify Admin, open the theme editor, select App embeds, enable Pricefloor, then save. You can also add the Pricefloor quote button block to a product section.
+            </Text>
+            <a href={themeEditorUrl} target="_blank" rel="noreferrer">
+              Open theme editor
+            </a>
           </BlockStack>
         </Card>
       ),
