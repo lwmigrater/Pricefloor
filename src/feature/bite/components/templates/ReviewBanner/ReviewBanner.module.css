@@ -1,0 +1,35 @@
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--p-color-text-disabled);
+  transition: color 0.2s ease;
+}
+
+.star[data-filled="true"] {
+  background: linear-gradient(
+    90deg,
+    #ffd700 0%,
+    #ffed4e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.star:focus {
+  outline: 2px solid var(--p-color-border-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

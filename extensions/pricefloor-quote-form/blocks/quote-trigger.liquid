@@ -1,0 +1,205 @@
+{% comment %}
+  Pricefloor — buyer-facing bulk quote engine (app embed).
+
+  Merchant enables this once via theme editor
+  (Online Store → Themes → Customize → App embeds → Pricefloor Bulk Quote).
+  From then on, every storefront page loads the modal form + quantity watcher
+  that POSTs to /apps/pricefloor/quote (the app proxy endpoint).
+
+  The "Request bulk quote" BUTTON no longer lives here — it's a separate
+  section block (blocks/quote-button.liquid) that merchants add to their
+  Product template (e.g. next to Add to cart). That way the button only
+  appears where the merchant places it, not floating on every page.
+
+  This embed still owns two things: auto-open on quantity threshold (fires
+  from any product/cart page independent of button placement) and the
+  merchant-visible design settings for the modal itself.
+{% endcomment %}
+
+<script>
+  window.PRICEFLOOR_CFG = {
+    hasEmbed: true,
+    threshold: {{ block.settings.threshold | default: 10 | json }},
+    autoOpen: {{ block.settings.auto_open | default: true | json }},
+    proxyUrl: "/apps/pricefloor/quote",
+    currency: {{ shop.currency | json }},
+    customerId: {% if customer %}{{ customer.id | prepend: 'gid://shopify/Customer/' | json }}{% else %}null{% endif %},
+    customerEmail: {% if customer %}{{ customer.email | json }}{% else %}null{% endif %},
+    companyId: {% if customer.b2b? and customer.current_company %}{{ customer.current_company.id | prepend: 'gid://shopify/Company/' | json }}{% else %}null{% endif %},
+    companyTier: {{ block.settings.default_tier | default: '' | json }},
+
+    // Modal copy — merchant editable
+    modalTitle: {{ block.settings.modal_title | default: 'Request a bulk quote' | json }},
+    modalSubtitle: {{ block.settings.modal_subtitle | default: "Choose your quantity and preferred price. The store will review every request." | json }},
+    autoTitle: {{ block.settings.auto_title | default: 'Ordering in bulk?' | json }},
+    autoBody: {{ block.settings.auto_body | default: 'Name your quantity and price. The store will review your request before sending an offer.' | json }},
+
+    // Modal design — CSS variables applied inline
+    accentColor:   {{ block.settings.accent_color   | default: '#111827' | json }},
+    modalRadius:   {{ block.settings.modal_radius   | default: 14        | json }},
+    modalSurface:  {{ block.settings.modal_surface  | default: '#ffffff' | json }},
+    modalFg:       {{ block.settings.modal_fg       | default: '#101828' | json }},
+    modalMuted:    {{ block.settings.modal_muted    | default: '#667085' | json }},
+    modalBorder:   {{ block.settings.modal_border   | default: '#ececef' | json }},
+    modalFieldBg:  {{ block.settings.modal_field_bg | default: '#ffffff' | json }},
+
+    // Feature toggles
+    showProduct: {{ block.settings.show_product | default: true  | json }},
+    showTerms:   {{ block.settings.show_terms   | default: true  | json }},
+    showTrust:   {{ block.settings.show_trust   | default: true  | json }},
+    trustText:   {{ block.settings.trust_text   | default: 'No payment now · The store reviews every request' | json }},
+  };
+</script>
+
+{{ 'pricefloor-quote.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'pricefloor-quote.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Pricefloor Bulk Quote",
+  "target": "body",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Auto-open on large quantity"
+    },
+    {
+      "type": "paragraph",
+      "content": "The visible button lives in a separate block you add to your product template. This section controls the automatic pop-up that fires when a buyer types a large quantity."
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_open",
+      "label": "Auto-open modal when quantity reaches the threshold",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "threshold",
+      "label": "Auto-open threshold (units)",
+      "info": "Modal opens automatically when a quantity input reaches this value.",
+      "default": 10
+    },
+    {
+      "type": "text",
+      "id": "auto_title",
+      "label": "Auto-open title",
+      "default": "Ordering in bulk?"
+    },
+    {
+      "type": "textarea",
+      "id": "auto_body",
+      "label": "Auto-open subtitle",
+      "default": "Name your quantity and price. The store will review your request before sending an offer."
+    },
+
+    {
+      "type": "header",
+      "content": "Modal copy"
+    },
+    {
+      "type": "paragraph",
+      "content": "Title and subtitle shown when the buyer opens the modal from the button (not the auto-open path above)."
+    },
+    {
+      "type": "text",
+      "id": "modal_title",
+      "label": "Modal title",
+      "default": "Request a bulk quote"
+    },
+    {
+      "type": "textarea",
+      "id": "modal_subtitle",
+      "label": "Modal subtitle",
+      "default": "Choose your quantity and preferred price. The store will review every request."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product",
+      "label": "Show product thumbnail + name at the top",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_trust",
+      "label": "Show trust line under the CTA",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "trust_text",
+      "label": "Trust line text",
+      "default": "No payment now · The store reviews every request"
+    },
+
+    {
+      "type": "header",
+      "content": "B2B"
+    },
+    {
+      "type": "text",
+      "id": "default_tier",
+      "label": "Default company tier",
+      "info": "Sent to the engine when no B2B company context is present (e.g. walk-in buyer). Leave blank to skip tier caps."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_terms",
+      "label": "Show payment terms field (net30 / prepaid)",
+      "default": true
+    },
+
+    {
+      "type": "header",
+      "content": "Modal design"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "info": "Drives the CTA fill and focus rings. Ink on the CTA is auto-picked (white or dark) for legibility.",
+      "default": "#111827"
+    },
+    {
+      "type": "range",
+      "id": "modal_radius",
+      "label": "Modal corner radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "modal_surface",
+      "label": "Modal background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "modal_fg",
+      "label": "Primary text",
+      "default": "#101828"
+    },
+    {
+      "type": "color",
+      "id": "modal_muted",
+      "label": "Secondary text",
+      "default": "#667085"
+    },
+    {
+      "type": "color",
+      "id": "modal_border",
+      "label": "Border / divider",
+      "default": "#ececef"
+    },
+    {
+      "type": "color",
+      "id": "modal_field_bg",
+      "label": "Input background",
+      "default": "#ffffff"
+    }
+  ]
+}
+{% endschema %}

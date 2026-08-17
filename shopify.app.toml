@@ -1,0 +1,69 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c22c63f39166c7655dac1142de8edd8f"
+name = "Suite360: Pricefloor"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,read_inventory,write_inventory,read_customers,read_companies,write_companies,read_draft_orders,write_draft_orders,read_orders"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[app_proxy]
+# Buyer storefront URL: /apps/pricefloor/<rest>. Shopify strips prefix + subpath
+# and appends /<rest> to this URL's path. `shopify app dev` swaps the host for
+# the tunnel; the PATH must match the route tree. /api/proxy/pricefloor/quote
+# maps to routes/api.proxy.pricefloor.quote.tsx.
+url = "https://shopify.dev/api/proxy/pricefloor"
+subpath = "pricefloor"
+prefix = "apps"
+
+[webhooks]
+api_version = "2026-07"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = [ "app/uninstalled" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/scopes_update"
+  topics = [ "app/scopes_update" ]
+
+  # NOTE: orders/create + draft_orders/update need Protected Customer Data Access.
+  # Request approval at Partner Dashboard → App → API access → Protected customer data.
+  # Once approved, uncomment these blocks and redeploy. Until then, quote↔order
+  # matching relies on the draft_order_id path only (email fallback is disabled).
+  #
+  #   [[webhooks.subscriptions]]
+  #   uri = "/webhooks/orders/create"
+  #   topics = [ "orders/create" ]
+  #
+  #   [[webhooks.subscriptions]]
+  #   uri = "/webhooks/draft_orders/update"
+  #   topics = [ "draft_orders/update" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/products/update"
+  topics = [ "products/update" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/inventory_items/update"
+  topics = [ "inventory_items/update" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/customers/data_request"
+  compliance_topics = [ "customers/data_request" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/customers/redact"
+  compliance_topics = [ "customers/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/shop/redact"
+  compliance_topics = [ "shop/redact" ]
+
+[build]
+automatically_update_urls_on_dev = true

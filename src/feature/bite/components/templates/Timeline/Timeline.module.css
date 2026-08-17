@@ -1,0 +1,8 @@
+.timeline {
+  padding: 1rem;
+}
+
+.timelineItem {
+  gap: 1rem;
+  align-items: flex-start;
+}

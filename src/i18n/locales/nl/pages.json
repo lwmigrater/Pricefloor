@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Home",
+    "setupGuide": "Installatiegids",
+    "setupDescription": "Gebruik deze gepersonaliseerde gids om uw winkel verkoopklaar te maken.",
+    "stepsCompleted": "{{count}} van {{total}} stappen voltooid"
+  },
+  "list": {
+    "title": "Puzzels",
+    "createPuzzle": "Puzzel aanmaken",
+    "exportPuzzles": "Puzzels exporteren",
+    "importPuzzles": "Puzzels importeren",
+    "emptyState": {
+      "title": "Begin met het aanmaken van puzzels",
+      "description": "Maak en beheer uw puzzelcollectie voor spelers om van te genieten.",
+      "learnMore": "Meer informatie"
+    },
+    "table": {
+      "puzzle": "Puzzel",
+      "pieces": "Stukken",
+      "created": "Aangemaakt",
+      "status": "Status",
+      "active": "Actief",
+      "draft": "Concept"
+    }
+  },
+  "detail": {
+    "title": "Bergzicht",
+    "breadcrumb": "Puzzels",
+    "information": {
+      "title": "Puzzelinformatie",
+      "name": "Puzzelnaam",
+      "namePlaceholder": "Voer puzzelnaam in",
+      "nameHelp": "Spelers zien deze naam bij het bladeren door puzzels.",
+      "description": "Beschrijving",
+      "descriptionPlaceholder": "Korte beschrijving van uw puzzel",
+      "descriptionHelp": "Help spelers begrijpen wat uw puzzel bevat",
+      "price": "Prijs",
+      "priceHelp": "Stel de prijs in voor deze puzzel",
+      "referenceUrl": "URL referentieafbeelding",
+      "referenceUrlHelp": "Optionele link naar originele afbeelding"
+    },
+    "templates": {
+      "title": "Puzzelsjablonen",
+      "searchPlaceholder": "Sjablonen zoeken",
+      "preview": "Voorbeeld",
+      "remove": "Verwijderen"
+    },
+    "settings": {
+      "title": "Instellingen",
+      "size": "Puzzelgrootte",
+      "pieceCount": "Aantal stukken",
+      "material": "Materiaal",
+      "quantity": "Hoeveelheid op voorraad",
+      "quantityHelp": "Huidige voorraadhoeveelheid",
+      "includeReference": "Referentieafbeelding insluiten",
+      "includeReferenceHelp": "Een referentieafbeelding meesturen met de puzzel"
+    },
+    "summary": {
+      "title": "Puzzeloverzicht",
+      "status": "Huidige status"
+    }
+  },
+  "subscriptions": {
+    "title": "Abonnementen",
+    "currentPlan": "Huidig abonnement: {{plan}}",
+    "status": "Status: {{status}} | Periode eindigt: {{date}}",
+    "cancelSubscription": "Abonnement opzeggen",
+    "cancelling": "Opzeggen...",
+    "choosePlan": "Kies het perfecte plan voor uw bedrijf",
+    "choosePlanDescription": "Flexibele prijsopties voor uw behoeften. Op elk moment upgraden of downgraden.",
+    "free": {
+      "name": "Gratis",
+      "description": "Perfect om te beginnen",
+      "price": "$ 0",
+      "perMonth": "/maand",
+      "features": {
+        "orders": "Tot 100 bestellingen/maand",
+        "analytics": "Basisanalyse",
+        "support": "E-mailondersteuning"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Voor groeiende bedrijven",
+      "price": "$ 29",
+      "mostPopular": "Meest populair",
+      "features": {
+        "orders": "Onbeperkte bestellingen",
+        "analytics": "Geavanceerde analyse",
+        "support": "Prioriteitsondersteuning",
+        "api": "API-toegang"
+      },
+      "upgrade": "Upgraden naar Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Voor grootschalige operaties",
+      "price": "$ 99",
+      "features": {
+        "everything": "Alles in Pro",
+        "manager": "Toegewijde accountmanager",
+        "phone": "24/7 telefonische ondersteuning",
+        "sla": "SLA-garantie"
+      },
+      "upgrade": "Upgraden naar Enterprise"
+    },
+    "currentPlanButton": "Huidig plan",
+    "helpSection": {
+      "title": "Hulp nodig bij het kiezen?",
+      "description": "Ons team staat klaar om u te helpen het juiste plan voor uw bedrijf te vinden. Neem contact op voor een persoonlijk advies.",
+      "contact": "Contact opnemen",
+      "docs": "Documentatie bekijken"
+    }
+  },
+  "settings": {
+    "title": "Instellingen",
+    "storeInfo": {
+      "title": "Winkelinformatie",
+      "name": "Winkelnaam",
+      "email": "Contact-e-mail",
+      "phone": "Telefoonnummer",
+      "address": "Winkeladres"
+    },
+    "notifications": {
+      "title": "Meldingen",
+      "emailNotifications": "E-mailmeldingen",
+      "emailNotificationsHelp": "E-mailupdates over uw account ontvangen",
+      "orderNotifications": "Bestelmeldingen",
+      "orderNotificationsHelp": "Ontvang een melding wanneer nieuwe bestellingen worden geplaatst"
+    },
+    "preferences": {
+      "title": "Voorkeuren",
+      "timezone": "Tijdzone",
+      "currency": "Valuta",
+      "language": "Taal"
+    },
+    "tools": {
+      "title": "Hulpmiddelen",
+      "exportData": "Gegevens exporteren",
+      "exportDataHelp": "Al uw gegevens downloaden",
+      "clearCache": "Cache wissen",
+      "clearCacheHelp": "Toepassingscache wissen"
+    },
+    "reviewSettings": {
+      "title": "Beoordelingsinstellingen",
+      "autoApprove": { "title": "Alle beoordelingen automatisch goedkeuren", "description": "Elke nieuwe beoordeling direct publiceren zonder handmatige moderatie." },
+      "autoApproveVerified": { "title": "Geverifieerde aankopen automatisch goedkeuren", "description": "Alleen beoordelingen van ingelogde klanten automatisch publiceren." },
+      "requirePurchase": { "title": "Geverifieerde aankoop vereist om in te dienen", "description": "Alleen ingelogde klanten kunnen beoordelingen achterlaten. Vermindert spam." }
+    },
+    "spamProtection": {
+      "title": "Spambeveiliging",
+      "enable": { "title": "Spambeveiliging inschakelen", "description": "Beoordelingen die te kort zijn of verboden woorden bevatten automatisch afwijzen." },
+      "bannedWords": { "title": "Verboden woorden", "description": "Door komma's gescheiden lijst. Beoordelingen met deze woorden worden automatisch afgewezen.", "label": "Woorden", "placeholder": "spam, reclame, klik hier, koop nu" },
+      "minLength": { "title": "Minimale beoordelingslengte", "description": "Beoordelingen korter dan dit aantal tekens worden afgewezen.", "label": "Minimale tekens" }
+    },
+    "captcha": {
+      "title": "CAPTCHA-beveiliging",
+      "enable": { "title": "Wiskundige CAPTCHA inschakelen", "description": "Toont een eenvoudige wiskundige uitdaging in het beoordelingsformulier. Geverifieerd op de server." }
+    },
+    "emailNotifications": {
+      "title": "E-mailmeldingen",
+      "notify": { "title": "Mij melden bij nieuwe beoordelingen", "description": "Een e-mail ontvangen telkens wanneer een klant een beoordeling instuurt." },
+      "emailLabel": "E-mailadres voor meldingen",
+      "emailPlaceholder": "u@uwwinkel.nl",
+      "reviewRequest": { "title": "Beoordelingsverzoeken na aankoop", "description": "Klanten na verzending een e-mail sturen met het verzoek om een beoordeling." },
+      "delayLabel": "E-mail verzenden na verzending",
+      "delay1": "1 dag", "delay3": "3 dagen", "delay5": "5 dagen", "delay7": "7 dagen", "delay14": "14 dagen"
+    },
+    "importSection": { "title": "Beoordelingen importeren vanuit CSV", "description": "Beoordelingen in bulk importeren vanuit een CSV-bestand.", "button": "Importeren" },
+    "saveButton": "Instellingen opslaan",
+    "savedBanner": "Instellingen succesvol opgeslagen"
+  }
+}

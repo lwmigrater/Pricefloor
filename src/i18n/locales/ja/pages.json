@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "ホーム",
+    "setupGuide": "セットアップガイド",
+    "setupDescription": "このパーソナライズされたガイドを使用して、ストアを販売準備完了にしてください。",
+    "stepsCompleted": "{{total}}ステップ中{{count}}ステップ完了"
+  },
+  "list": {
+    "title": "パズル",
+    "createPuzzle": "パズルを作成",
+    "exportPuzzles": "パズルをエクスポート",
+    "importPuzzles": "パズルをインポート",
+    "emptyState": {
+      "title": "パズルの作成を始めましょう",
+      "description": "プレイヤーが楽しめるパズルコレクションを作成・管理しましょう。",
+      "learnMore": "詳細を見る"
+    },
+    "table": {
+      "puzzle": "パズル",
+      "pieces": "ピース数",
+      "created": "作成日",
+      "status": "ステータス",
+      "active": "アクティブ",
+      "draft": "下書き"
+    }
+  },
+  "detail": {
+    "title": "山の景色",
+    "breadcrumb": "パズル",
+    "information": {
+      "title": "パズル情報",
+      "name": "パズル名",
+      "namePlaceholder": "パズル名を入力",
+      "nameHelp": "プレイヤーはパズルを閲覧する際にこの名前を見ます。",
+      "description": "説明",
+      "descriptionPlaceholder": "パズルの簡単な説明",
+      "descriptionHelp": "プレイヤーがパズルの内容を理解できるよう説明してください",
+      "price": "価格",
+      "priceHelp": "このパズルの価格を設定してください",
+      "referenceUrl": "参考画像URL",
+      "referenceUrlHelp": "元の画像へのオプションリンク"
+    },
+    "templates": {
+      "title": "パズルテンプレート",
+      "searchPlaceholder": "テンプレートを検索",
+      "preview": "プレビュー",
+      "remove": "削除"
+    },
+    "settings": {
+      "title": "設定",
+      "size": "パズルサイズ",
+      "pieceCount": "ピース数",
+      "material": "素材",
+      "quantity": "在庫数",
+      "quantityHelp": "現在の在庫数量",
+      "includeReference": "参考画像を含める",
+      "includeReferenceHelp": "パズルと一緒に参考画像を同梱する"
+    },
+    "summary": {
+      "title": "パズルの概要",
+      "status": "現在のステータス"
+    }
+  },
+  "subscriptions": {
+    "title": "サブスクリプション",
+    "currentPlan": "現在のプラン: {{plan}}",
+    "status": "ステータス: {{status}} | 期間終了: {{date}}",
+    "cancelSubscription": "サブスクリプションをキャンセル",
+    "cancelling": "キャンセル中...",
+    "choosePlan": "ビジネスに最適なプランを選択",
+    "choosePlanDescription": "ニーズに合わせた柔軟な料金オプション。いつでもアップグレード・ダウングレード可能。",
+    "free": {
+      "name": "無料",
+      "description": "始めるのに最適",
+      "price": "$0",
+      "perMonth": "/月",
+      "features": {
+        "orders": "月最大100注文",
+        "analytics": "基本分析",
+        "support": "メールサポート"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "成長するビジネス向け",
+      "price": "$29",
+      "mostPopular": "最も人気",
+      "features": {
+        "orders": "無制限の注文",
+        "analytics": "高度な分析",
+        "support": "優先サポート",
+        "api": "APIアクセス"
+      },
+      "upgrade": "Proにアップグレード"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "大規模な事業向け",
+      "price": "$99",
+      "features": {
+        "everything": "Proのすべてを含む",
+        "manager": "専任アカウントマネージャー",
+        "phone": "24時間365日電話サポート",
+        "sla": "SLA保証"
+      },
+      "upgrade": "Enterpriseにアップグレード"
+    },
+    "currentPlanButton": "現在のプラン",
+    "helpSection": {
+      "title": "選択にお困りですか？",
+      "description": "私たちのチームがあなたのビジネスに合ったプランを見つけるお手伝いをします。パーソナライズされたご相談はお気軽にお問い合わせください。",
+      "contact": "サポートに連絡",
+      "docs": "ドキュメントを見る"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "storeInfo": {
+      "title": "ストア情報",
+      "name": "ストア名",
+      "email": "連絡先メール",
+      "phone": "電話番号",
+      "address": "ストアの住所"
+    },
+    "notifications": {
+      "title": "通知",
+      "emailNotifications": "メール通知",
+      "emailNotificationsHelp": "アカウントに関するメールの更新を受け取る",
+      "orderNotifications": "注文通知",
+      "orderNotificationsHelp": "新しい注文が入ったときに通知を受け取る"
+    },
+    "preferences": {
+      "title": "設定",
+      "timezone": "タイムゾーン",
+      "currency": "通貨",
+      "language": "言語"
+    },
+    "tools": {
+      "title": "ツール",
+      "exportData": "データをエクスポート",
+      "exportDataHelp": "すべてのデータをダウンロード",
+      "clearCache": "キャッシュをクリア",
+      "clearCacheHelp": "アプリケーションキャッシュをクリア"
+    },
+    "reviewSettings": {
+      "title": "レビュー設定",
+      "autoApprove": { "title": "すべてのレビューを自動承認", "description": "手動モデレートなしで各新しいレビューをすぐに公開します。" },
+      "autoApproveVerified": { "title": "確認済み購入を自動承認", "description": "ログイン済み顧客のレビューのみ自動公開します。" },
+      "requirePurchase": { "title": "投稿に確認済み購入が必要", "description": "ログイン済み顧客のみレビューを残せます。スパムを減らします。" }
+    },
+    "spamProtection": {
+      "title": "スパム対策",
+      "enable": { "title": "スパム対策を有効にする", "description": "短すぎるまたは禁止ワードを含むレビューを自動的に拒否します。" },
+      "bannedWords": { "title": "禁止ワード", "description": "カンマ区切りリスト。これらのワードを含むレビューは自動的に拒否されます。", "label": "ワード", "placeholder": "スパム, 広告, ここをクリック" },
+      "minLength": { "title": "最小レビュー文字数", "description": "この文字数未満のレビューは拒否されます。", "label": "最小文字数" }
+    },
+    "captcha": {
+      "title": "CAPTCHA保護",
+      "enable": { "title": "数学CAPTCHAを有効にする", "description": "レビューフォームに簡単な数学の問題を表示します。サーバー側で検証。" }
+    },
+    "emailNotifications": {
+      "title": "メール通知",
+      "notify": { "title": "新しいレビューで通知を受け取る", "description": "顧客がレビューを送信するたびにメールを受け取ります。" },
+      "emailLabel": "通知メールアドレス",
+      "emailPlaceholder": "you@yourstore.com",
+      "reviewRequest": { "title": "購入後レビューリクエスト", "description": "注文発送後に顧客へレビュー依頼メールを送信します。" },
+      "delayLabel": "発送後にメールを送信",
+      "delay1": "1日後", "delay3": "3日後", "delay5": "5日後", "delay7": "7日後", "delay14": "14日後"
+    },
+    "importSection": { "title": "CSVからレビューをインポート", "description": "CSVファイルからレビューを一括インポートします。", "button": "インポート" },
+    "saveButton": "設定を保存",
+    "savedBanner": "設定が正常に保存されました"
+  }
+}

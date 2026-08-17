@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "홈",
+    "setupGuide": "설정 가이드",
+    "setupDescription": "이 개인화된 가이드를 사용하여 스토어를 판매 준비 상태로 만드세요.",
+    "stepsCompleted": "{{total}}단계 중 {{count}}단계 완료"
+  },
+  "list": {
+    "title": "퍼즐",
+    "createPuzzle": "퍼즐 만들기",
+    "exportPuzzles": "퍼즐 내보내기",
+    "importPuzzles": "퍼즐 가져오기",
+    "emptyState": {
+      "title": "퍼즐 만들기를 시작하세요",
+      "description": "플레이어가 즐길 수 있는 퍼즐 컬렉션을 만들고 관리하세요.",
+      "learnMore": "자세히 알아보기"
+    },
+    "table": {
+      "puzzle": "퍼즐",
+      "pieces": "조각",
+      "created": "생성됨",
+      "status": "상태",
+      "active": "활성",
+      "draft": "초안"
+    }
+  },
+  "detail": {
+    "title": "산 경치",
+    "breadcrumb": "퍼즐",
+    "information": {
+      "title": "퍼즐 정보",
+      "name": "퍼즐 이름",
+      "namePlaceholder": "퍼즐 이름 입력",
+      "nameHelp": "플레이어가 퍼즐을 탐색할 때 이 이름을 볼 것입니다.",
+      "description": "설명",
+      "descriptionPlaceholder": "퍼즐에 대한 간단한 설명",
+      "descriptionHelp": "플레이어가 퍼즐의 내용을 이해할 수 있도록 도와주세요",
+      "price": "가격",
+      "priceHelp": "이 퍼즐의 가격을 설정하세요",
+      "referenceUrl": "참조 이미지 URL",
+      "referenceUrlHelp": "원본 이미지에 대한 선택적 링크"
+    },
+    "templates": {
+      "title": "퍼즐 템플릿",
+      "searchPlaceholder": "템플릿 검색",
+      "preview": "미리보기",
+      "remove": "제거"
+    },
+    "settings": {
+      "title": "설정",
+      "size": "퍼즐 크기",
+      "pieceCount": "조각 수",
+      "material": "소재",
+      "quantity": "재고 수량",
+      "quantityHelp": "현재 재고 수량",
+      "includeReference": "참조 이미지 포함",
+      "includeReferenceHelp": "퍼즐과 함께 참조 이미지 발송"
+    },
+    "summary": {
+      "title": "퍼즐 요약",
+      "status": "현재 상태"
+    }
+  },
+  "subscriptions": {
+    "title": "구독",
+    "currentPlan": "현재 구독: {{plan}}",
+    "status": "상태: {{status}} | 기간 종료: {{date}}",
+    "cancelSubscription": "구독 취소",
+    "cancelling": "취소 중...",
+    "choosePlan": "비즈니스에 맞는 완벽한 플랜 선택",
+    "choosePlanDescription": "필요에 맞는 유연한 가격 옵션. 언제든지 업그레이드 또는 다운그레이드 가능.",
+    "free": {
+      "name": "무료",
+      "description": "시작하기에 완벽",
+      "price": "$0",
+      "perMonth": "/월",
+      "features": {
+        "orders": "월 최대 100개 주문",
+        "analytics": "기본 분석",
+        "support": "이메일 지원"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "성장하는 비즈니스를 위한",
+      "price": "$29",
+      "mostPopular": "가장 인기",
+      "features": {
+        "orders": "무제한 주문",
+        "analytics": "고급 분석",
+        "support": "우선 지원",
+        "api": "API 액세스"
+      },
+      "upgrade": "Pro로 업그레이드"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "대규모 운영을 위한",
+      "price": "$99",
+      "features": {
+        "everything": "Pro의 모든 것",
+        "manager": "전담 계정 관리자",
+        "phone": "24/7 전화 지원",
+        "sla": "SLA 보장"
+      },
+      "upgrade": "Enterprise로 업그레이드"
+    },
+    "currentPlanButton": "현재 플랜",
+    "helpSection": {
+      "title": "선택에 도움이 필요하신가요?",
+      "description": "저희 팀이 귀하의 비즈니스에 맞는 올바른 플랜을 찾는 데 도움을 드립니다. 개인 상담을 위해 문의해 주세요.",
+      "contact": "지원팀 문의",
+      "docs": "문서 보기"
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "storeInfo": {
+      "title": "스토어 정보",
+      "name": "스토어 이름",
+      "email": "연락처 이메일",
+      "phone": "전화번호",
+      "address": "스토어 주소"
+    },
+    "notifications": {
+      "title": "알림",
+      "emailNotifications": "이메일 알림",
+      "emailNotificationsHelp": "계정에 관한 이메일 업데이트 받기",
+      "orderNotifications": "주문 알림",
+      "orderNotificationsHelp": "새 주문이 들어올 때 알림 받기"
+    },
+    "preferences": {
+      "title": "환경설정",
+      "timezone": "시간대",
+      "currency": "통화",
+      "language": "언어"
+    },
+    "tools": {
+      "title": "도구",
+      "exportData": "데이터 내보내기",
+      "exportDataHelp": "모든 데이터 다운로드",
+      "clearCache": "캐시 지우기",
+      "clearCacheHelp": "애플리케이션 캐시 지우기"
+    },
+    "reviewSettings": {
+      "title": "리뷰 설정",
+      "autoApprove": { "title": "모든 리뷰 자동 승인", "description": "수동 검토 없이 모든 새 리뷰를 즉시 게시합니다." },
+      "autoApproveVerified": { "title": "확인된 구매 자동 승인", "description": "로그인한 고객의 리뷰만 자동으로 게시합니다." },
+      "requirePurchase": { "title": "제출을 위해 확인된 구매 필요", "description": "로그인한 고객만 리뷰를 남길 수 있습니다. 스팸을 줄입니다." }
+    },
+    "spamProtection": {
+      "title": "스팸 보호",
+      "enable": { "title": "스팸 보호 활성화", "description": "너무 짧거나 금지 단어가 포함된 리뷰를 자동으로 거부합니다." },
+      "bannedWords": { "title": "금지 단어", "description": "쉼표로 구분된 목록. 이 단어가 포함된 리뷰는 자동으로 거부됩니다.", "label": "단어", "placeholder": "스팸, 광고, 여기 클릭, 지금 구매" },
+      "minLength": { "title": "최소 리뷰 길이", "description": "이 글자 수보다 짧은 리뷰는 거부됩니다.", "label": "최소 글자 수" }
+    },
+    "captcha": {
+      "title": "CAPTCHA 보호",
+      "enable": { "title": "수학 CAPTCHA 활성화", "description": "리뷰 양식에 간단한 수학 문제를 표시합니다. 서버 측에서 검증됩니다." }
+    },
+    "emailNotifications": {
+      "title": "이메일 알림",
+      "notify": { "title": "새 리뷰 시 알림 받기", "description": "고객이 리뷰를 제출할 때마다 이메일을 받습니다." },
+      "emailLabel": "알림 이메일 주소",
+      "emailPlaceholder": "you@yourstore.com",
+      "reviewRequest": { "title": "구매 후 리뷰 요청", "description": "주문 배송 후 고객에게 리뷰를 요청하는 이메일을 보냅니다." },
+      "delayLabel": "배송 후 이메일 발송",
+      "delay1": "1일 후", "delay3": "3일 후", "delay5": "5일 후", "delay7": "7일 후", "delay14": "14일 후"
+    },
+    "importSection": { "title": "CSV에서 리뷰 가져오기", "description": "CSV 파일에서 리뷰를 대량으로 가져옵니다.", "button": "가져오기" },
+    "saveButton": "설정 저장",
+    "savedBanner": "설정이 성공적으로 저장되었습니다"
+  }
+}

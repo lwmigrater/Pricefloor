@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Home",
+    "setupGuide": "Guida alla configurazione",
+    "setupDescription": "Usa questa guida personalizzata per preparare il tuo negozio alle vendite.",
+    "stepsCompleted": "{{count}} di {{total}} passaggi completati"
+  },
+  "list": {
+    "title": "Puzzle",
+    "createPuzzle": "Crea puzzle",
+    "exportPuzzles": "Esporta puzzle",
+    "importPuzzles": "Importa puzzle",
+    "emptyState": {
+      "title": "Inizia a creare puzzle",
+      "description": "Crea e gestisci la tua collezione di puzzle per i giocatori.",
+      "learnMore": "Scopri di più"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Pezzi",
+      "created": "Creato",
+      "status": "Stato",
+      "active": "Attivo",
+      "draft": "Bozza"
+    }
+  },
+  "detail": {
+    "title": "Vista sulla montagna",
+    "breadcrumb": "Puzzle",
+    "information": {
+      "title": "Informazioni sul puzzle",
+      "name": "Nome del puzzle",
+      "namePlaceholder": "Inserisci il nome del puzzle",
+      "nameHelp": "I giocatori vedranno questo nome quando sfogliano i puzzle.",
+      "description": "Descrizione",
+      "descriptionPlaceholder": "Breve descrizione del tuo puzzle",
+      "descriptionHelp": "Aiuta i giocatori a capire cosa contiene il tuo puzzle",
+      "price": "Prezzo",
+      "priceHelp": "Imposta il prezzo per questo puzzle",
+      "referenceUrl": "URL immagine di riferimento",
+      "referenceUrlHelp": "Link opzionale all'immagine originale"
+    },
+    "templates": {
+      "title": "Modelli di puzzle",
+      "searchPlaceholder": "Cerca modelli",
+      "preview": "Anteprima",
+      "remove": "Rimuovi"
+    },
+    "settings": {
+      "title": "Impostazioni",
+      "size": "Dimensione del puzzle",
+      "pieceCount": "Numero di pezzi",
+      "material": "Materiale",
+      "quantity": "Quantità in magazzino",
+      "quantityHelp": "Quantità di inventario attuale",
+      "includeReference": "Includi immagine di riferimento",
+      "includeReferenceHelp": "Spedire un'immagine di riferimento con il puzzle"
+    },
+    "summary": {
+      "title": "Riepilogo del puzzle",
+      "status": "Stato attuale"
+    }
+  },
+  "subscriptions": {
+    "title": "Abbonamenti",
+    "currentPlan": "Abbonamento attuale: {{plan}}",
+    "status": "Stato: {{status}} | Periodo termina il: {{date}}",
+    "cancelSubscription": "Annulla abbonamento",
+    "cancelling": "Annullamento...",
+    "choosePlan": "Scegli il piano perfetto per la tua azienda",
+    "choosePlanDescription": "Opzioni di prezzo flessibili per le tue esigenze. Aggiorna o declassa in qualsiasi momento.",
+    "free": {
+      "name": "Gratuito",
+      "description": "Perfetto per iniziare",
+      "price": "0 $",
+      "perMonth": "/mese",
+      "features": {
+        "orders": "Fino a 100 ordini/mese",
+        "analytics": "Analisi di base",
+        "support": "Supporto via e-mail"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Per le aziende in crescita",
+      "price": "29 $",
+      "mostPopular": "Più popolare",
+      "features": {
+        "orders": "Ordini illimitati",
+        "analytics": "Analisi avanzate",
+        "support": "Supporto prioritario",
+        "api": "Accesso API"
+      },
+      "upgrade": "Passa a Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Per operazioni su larga scala",
+      "price": "99 $",
+      "features": {
+        "everything": "Tutto di Pro",
+        "manager": "Account manager dedicato",
+        "phone": "Supporto telefonico 24/7",
+        "sla": "Garanzia SLA"
+      },
+      "upgrade": "Passa a Enterprise"
+    },
+    "currentPlanButton": "Piano attuale",
+    "helpSection": {
+      "title": "Hai bisogno di aiuto per scegliere?",
+      "description": "Il nostro team è qui per aiutarti a trovare il piano giusto per la tua azienda. Contattaci per una consulenza personalizzata.",
+      "contact": "Contatta il supporto",
+      "docs": "Visualizza la documentazione"
+    }
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "storeInfo": {
+      "title": "Informazioni negozio",
+      "name": "Nome del negozio",
+      "email": "E-mail di contatto",
+      "phone": "Numero di telefono",
+      "address": "Indirizzo del negozio"
+    },
+    "notifications": {
+      "title": "Notifiche",
+      "emailNotifications": "Notifiche via e-mail",
+      "emailNotificationsHelp": "Ricevi aggiornamenti via e-mail sul tuo account",
+      "orderNotifications": "Notifiche degli ordini",
+      "orderNotificationsHelp": "Ricevi notifiche quando vengono effettuati nuovi ordini"
+    },
+    "preferences": {
+      "title": "Preferenze",
+      "timezone": "Fuso orario",
+      "currency": "Valuta",
+      "language": "Lingua"
+    },
+    "tools": {
+      "title": "Strumenti",
+      "exportData": "Esporta dati",
+      "exportDataHelp": "Scarica tutti i tuoi dati",
+      "clearCache": "Svuota cache",
+      "clearCacheHelp": "Svuota la cache dell'applicazione"
+    },
+    "reviewSettings": {
+      "title": "Impostazioni recensioni",
+      "autoApprove": { "title": "Approva automaticamente tutte le recensioni", "description": "Pubblica ogni nuova recensione immediatamente senza moderazione manuale." },
+      "autoApproveVerified": { "title": "Approva automaticamente gli acquisti verificati", "description": "Pubblica automaticamente solo le recensioni dei clienti registrati." },
+      "requirePurchase": { "title": "Richiedi acquisto verificato per inviare", "description": "Solo i clienti registrati possono lasciare recensioni. Riduce lo spam." }
+    },
+    "spamProtection": {
+      "title": "Protezione spam",
+      "enable": { "title": "Attiva protezione spam", "description": "Rifiuta automaticamente le recensioni troppo brevi o con parole vietate." },
+      "bannedWords": { "title": "Parole vietate", "description": "Lista separata da virgole. Le recensioni con queste parole saranno rifiutate automaticamente.", "label": "Parole", "placeholder": "spam, pubblicità, clicca qui, compra ora" },
+      "minLength": { "title": "Lunghezza minima recensione", "description": "Le recensioni più corte di questo numero di caratteri saranno rifiutate.", "label": "Caratteri minimi" }
+    },
+    "captcha": {
+      "title": "Protezione CAPTCHA",
+      "enable": { "title": "Attiva CAPTCHA matematico", "description": "Mostra una semplice sfida matematica nel modulo di recensione. Verificato lato server." }
+    },
+    "emailNotifications": {
+      "title": "Notifiche e-mail",
+      "notify": { "title": "Avvisami per nuove recensioni", "description": "Ricevere una e-mail ogni volta che un cliente invia una recensione." },
+      "emailLabel": "Indirizzo e-mail di notifica",
+      "emailPlaceholder": "tu@tuonegozio.com",
+      "reviewRequest": { "title": "Richieste di recensione post-acquisto", "description": "Inviare ai clienti una e-mail dopo la spedizione dell'ordine chiedendo una recensione." },
+      "delayLabel": "Invia e-mail dopo la spedizione",
+      "delay1": "1 giorno", "delay3": "3 giorni", "delay5": "5 giorni", "delay7": "7 giorni", "delay14": "14 giorni"
+    },
+    "importSection": { "title": "Importa recensioni da CSV", "description": "Importazione in blocco di recensioni da un file CSV.", "button": "Importa" },
+    "saveButton": "Salva impostazioni",
+    "savedBanner": "Impostazioni salvate con successo"
+  }
+}

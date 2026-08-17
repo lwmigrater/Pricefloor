@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Ana Sayfa",
+    "setupGuide": "Kurulum Rehberi",
+    "setupDescription": "Mağazanızı satışa hazırlamak için bu kişiselleştirilmiş rehberi kullanın.",
+    "stepsCompleted": "{{total}} adımdan {{count}} tamamlandı"
+  },
+  "list": {
+    "title": "Yapbozlar",
+    "createPuzzle": "Yapboz oluştur",
+    "exportPuzzles": "Yapbozları dışa aktar",
+    "importPuzzles": "Yapbozları içe aktar",
+    "emptyState": {
+      "title": "Yapboz oluşturmaya başlayın",
+      "description": "Oyuncuların keyif alması için yapboz koleksiyonunuzu oluşturun ve yönetin.",
+      "learnMore": "Daha fazla bilgi"
+    },
+    "table": {
+      "puzzle": "Yapboz",
+      "pieces": "Parçalar",
+      "created": "Oluşturulma",
+      "status": "Durum",
+      "active": "Aktif",
+      "draft": "Taslak"
+    }
+  },
+  "detail": {
+    "title": "Dağ manzarası",
+    "breadcrumb": "Yapbozlar",
+    "information": {
+      "title": "Yapboz bilgileri",
+      "name": "Yapboz adı",
+      "namePlaceholder": "Yapboz adını girin",
+      "nameHelp": "Oyuncular yapbozlara göz atarken bu ismi görecekler.",
+      "description": "Açıklama",
+      "descriptionPlaceholder": "Yapbozunuzun kısa açıklaması",
+      "descriptionHelp": "Oyuncuların yapbozunuzun özelliklerini anlamasına yardımcı olun",
+      "price": "Fiyat",
+      "priceHelp": "Bu yapboz için fiyat belirleyin",
+      "referenceUrl": "Referans görsel URL'si",
+      "referenceUrlHelp": "Orijinal görsele isteğe bağlı bağlantı"
+    },
+    "templates": {
+      "title": "Yapboz şablonları",
+      "searchPlaceholder": "Şablon ara",
+      "preview": "Önizle",
+      "remove": "Kaldır"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "size": "Yapboz boyutu",
+      "pieceCount": "Parça sayısı",
+      "material": "Malzeme",
+      "quantity": "Stok miktarı",
+      "quantityHelp": "Mevcut envanter miktarı",
+      "includeReference": "Referans görsel ekle",
+      "includeReferenceHelp": "Yapbozla birlikte bir referans görsel gönderin"
+    },
+    "summary": {
+      "title": "Yapboz özeti",
+      "status": "Mevcut durum"
+    }
+  },
+  "subscriptions": {
+    "title": "Abonelikler",
+    "currentPlan": "Mevcut Abonelik: {{plan}}",
+    "status": "Durum: {{status}} | Dönem bitiş: {{date}}",
+    "cancelSubscription": "Aboneliği İptal Et",
+    "cancelling": "İptal ediliyor...",
+    "choosePlan": "İşletmeniz için mükemmel planı seçin",
+    "choosePlanDescription": "İhtiyaçlarınıza uygun esnek fiyatlandırma seçenekleri. İstediğiniz zaman yükseltin veya düşürün.",
+    "free": {
+      "name": "Ücretsiz",
+      "description": "Başlamak için mükemmel",
+      "price": "$0",
+      "perMonth": "/ay",
+      "features": {
+        "orders": "Ayda 100 siparişe kadar",
+        "analytics": "Temel analitik",
+        "support": "E-posta desteği"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Büyüyen işletmeler için",
+      "price": "$29",
+      "mostPopular": "En Popüler",
+      "features": {
+        "orders": "Sınırsız sipariş",
+        "analytics": "Gelişmiş analitik",
+        "support": "Öncelikli destek",
+        "api": "API erişimi"
+      },
+      "upgrade": "Pro'ya Yükselt"
+    },
+    "enterprise": {
+      "name": "Kurumsal",
+      "description": "Büyük ölçekli operasyonlar için",
+      "price": "$99",
+      "features": {
+        "everything": "Pro'daki her şey",
+        "manager": "Özel hesap yöneticisi",
+        "phone": "7/24 telefon desteği",
+        "sla": "SLA garantisi"
+      },
+      "upgrade": "Kurumsal'a Yükselt"
+    },
+    "currentPlanButton": "Mevcut Plan",
+    "helpSection": {
+      "title": "Seçimde yardıma mı ihtiyacınız var?",
+      "description": "Ekibimiz işletmeniz için doğru planı bulmanıza yardımcı olmak için burada. Kişiselleştirilmiş danışmanlık için bize ulaşın.",
+      "contact": "Desteğe Ulaş",
+      "docs": "Belgeleri Görüntüle"
+    }
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "storeInfo": {
+      "title": "Mağaza Bilgileri",
+      "name": "Mağaza adı",
+      "email": "İletişim e-postası",
+      "phone": "Telefon numarası",
+      "address": "Mağaza adresi"
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "emailNotifications": "E-posta bildirimleri",
+      "emailNotificationsHelp": "Hesabınız hakkında e-posta güncellemeleri alın",
+      "orderNotifications": "Sipariş bildirimleri",
+      "orderNotificationsHelp": "Yeni siparişler verildiğinde bildirim alın"
+    },
+    "preferences": {
+      "title": "Tercihler",
+      "timezone": "Saat dilimi",
+      "currency": "Para birimi",
+      "language": "Dil"
+    },
+    "tools": {
+      "title": "Araçlar",
+      "exportData": "Verileri dışa aktar",
+      "exportDataHelp": "Tüm verilerinizi indirin",
+      "clearCache": "Önbelleği temizle",
+      "clearCacheHelp": "Uygulama önbelleğini temizle"
+    },
+    "reviewSettings": {
+      "title": "Yorum Ayarları",
+      "autoApprove": { "title": "Tüm yorumları otomatik onayla", "description": "Her yeni yorumu manuel moderasyon olmadan hemen yayınla." },
+      "autoApproveVerified": { "title": "Doğrulanmış satın alımları otomatik onayla", "description": "Yalnızca giriş yapmış müşterilerin yorumlarını otomatik yayınla." },
+      "requirePurchase": { "title": "Yorum yazmak için doğrulanmış satın alım zorunlu", "description": "Yalnızca giriş yapmış müşteriler yorum bırakabilir. Spam'i azaltır." }
+    },
+    "spamProtection": {
+      "title": "Spam Koruması",
+      "enable": { "title": "Spam korumasını etkinleştir", "description": "Çok kısa olan veya yasaklı kelimeler içeren yorumları otomatik olarak reddet." },
+      "bannedWords": { "title": "Yasaklı kelimeler", "description": "Virgülle ayrılmış liste. Bu kelimelerden herhangi birini içeren yorumlar otomatik reddedilecek.", "label": "Kelimeler", "placeholder": "spam, reklam, buraya tıkla, şimdi al" },
+      "minLength": { "title": "Minimum yorum uzunluğu", "description": "Bu karakter sayısından kısa yorumlar reddedilecek. Tek kelimelik veya boş yorumları engeller.", "label": "Minimum karakter" }
+    },
+    "captcha": {
+      "title": "CAPTCHA Koruması",
+      "enable": { "title": "Matematik CAPTCHA'yı etkinleştir", "description": "Yorum formunda basit bir matematik sorusu gösterir (örn. \"4 + 7 = ?\"). Sunucu tarafında doğrulanır." }
+    },
+    "emailNotifications": {
+      "title": "E-posta Bildirimleri",
+      "notify": { "title": "Yeni yorumlarda beni bildir", "description": "Bir müşteri yorum gönderdiğinde e-posta al." },
+      "emailLabel": "Bildirim e-posta adresi",
+      "emailPlaceholder": "sen@magazan.com",
+      "reviewRequest": { "title": "Satın alma sonrası yorum isteği", "description": "Sipariş kargolandıktan sonra müşterilere yorum isteyen e-posta gönder." },
+      "delayLabel": "Kargo sonrası e-posta gönderme süresi",
+      "delay1": "1 gün", "delay3": "3 gün", "delay5": "5 gün", "delay7": "7 gün", "delay14": "14 gün"
+    },
+    "importSection": { "title": "CSV'den yorum içe aktar", "description": "Yorumları CSV dosyasından toplu olarak içe aktar.", "button": "İçe Aktar" },
+    "saveButton": "Ayarları kaydet",
+    "savedBanner": "Ayarlar başarıyla kaydedildi"
+  }
+}

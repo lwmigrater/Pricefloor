@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Accueil",
+    "setupGuide": "Guide de configuration",
+    "setupDescription": "Utilisez ce guide personnalisé pour préparer votre boutique aux ventes.",
+    "stepsCompleted": "{{count}} étapes sur {{total}} complétées"
+  },
+  "list": {
+    "title": "Puzzles",
+    "createPuzzle": "Créer un puzzle",
+    "exportPuzzles": "Exporter les puzzles",
+    "importPuzzles": "Importer les puzzles",
+    "emptyState": {
+      "title": "Commencez à créer des puzzles",
+      "description": "Créez et gérez votre collection de puzzles pour le plaisir des joueurs.",
+      "learnMore": "En savoir plus"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Pièces",
+      "created": "Créé",
+      "status": "Statut",
+      "active": "Actif",
+      "draft": "Brouillon"
+    }
+  },
+  "detail": {
+    "title": "Vue de montagne",
+    "breadcrumb": "Puzzles",
+    "information": {
+      "title": "Informations sur le puzzle",
+      "name": "Nom du puzzle",
+      "namePlaceholder": "Entrez le nom du puzzle",
+      "nameHelp": "Les joueurs verront ce nom en parcourant les puzzles.",
+      "description": "Description",
+      "descriptionPlaceholder": "Brève description de votre puzzle",
+      "descriptionHelp": "Aidez les joueurs à comprendre ce que contient votre puzzle",
+      "price": "Prix",
+      "priceHelp": "Définissez le prix de ce puzzle",
+      "referenceUrl": "URL de l'image de référence",
+      "referenceUrlHelp": "Lien optionnel vers l'image originale"
+    },
+    "templates": {
+      "title": "Modèles de puzzle",
+      "searchPlaceholder": "Rechercher des modèles",
+      "preview": "Aperçu",
+      "remove": "Supprimer"
+    },
+    "settings": {
+      "title": "Paramètres",
+      "size": "Taille du puzzle",
+      "pieceCount": "Nombre de pièces",
+      "material": "Matériau",
+      "quantity": "Quantité en stock",
+      "quantityHelp": "Quantité d'inventaire actuelle",
+      "includeReference": "Inclure l'image de référence",
+      "includeReferenceHelp": "Livrer une image de référence avec le puzzle"
+    },
+    "summary": {
+      "title": "Résumé du puzzle",
+      "status": "Statut actuel"
+    }
+  },
+  "subscriptions": {
+    "title": "Abonnements",
+    "currentPlan": "Abonnement actuel : {{plan}}",
+    "status": "Statut : {{status}} | Période se termine le : {{date}}",
+    "cancelSubscription": "Annuler l'abonnement",
+    "cancelling": "Annulation...",
+    "choosePlan": "Choisissez le plan parfait pour votre entreprise",
+    "choosePlanDescription": "Options de tarification flexibles pour vos besoins. Montez ou descendez en gamme à tout moment.",
+    "free": {
+      "name": "Gratuit",
+      "description": "Parfait pour commencer",
+      "price": "0 $",
+      "perMonth": "/mois",
+      "features": {
+        "orders": "Jusqu'à 100 commandes/mois",
+        "analytics": "Analyses de base",
+        "support": "Support par e-mail"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Pour les entreprises en croissance",
+      "price": "29 $",
+      "mostPopular": "Le plus populaire",
+      "features": {
+        "orders": "Commandes illimitées",
+        "analytics": "Analyses avancées",
+        "support": "Support prioritaire",
+        "api": "Accès API"
+      },
+      "upgrade": "Passer à Pro"
+    },
+    "enterprise": {
+      "name": "Entreprise",
+      "description": "Pour les opérations à grande échelle",
+      "price": "99 $",
+      "features": {
+        "everything": "Tout ce qui est dans Pro",
+        "manager": "Gestionnaire de compte dédié",
+        "phone": "Support téléphonique 24h/24 7j/7",
+        "sla": "Garantie SLA"
+      },
+      "upgrade": "Passer à Entreprise"
+    },
+    "currentPlanButton": "Plan actuel",
+    "helpSection": {
+      "title": "Besoin d'aide pour choisir ?",
+      "description": "Notre équipe est là pour vous aider à trouver le bon plan pour votre entreprise. Contactez-nous pour une consultation personnalisée.",
+      "contact": "Contacter le support",
+      "docs": "Voir la documentation"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "storeInfo": {
+      "title": "Informations sur la boutique",
+      "name": "Nom de la boutique",
+      "email": "E-mail de contact",
+      "phone": "Numéro de téléphone",
+      "address": "Adresse de la boutique"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "emailNotifications": "Notifications par e-mail",
+      "emailNotificationsHelp": "Recevez des mises à jour par e-mail concernant votre compte",
+      "orderNotifications": "Notifications de commande",
+      "orderNotificationsHelp": "Soyez notifié lorsque de nouvelles commandes sont passées"
+    },
+    "preferences": {
+      "title": "Préférences",
+      "timezone": "Fuseau horaire",
+      "currency": "Devise",
+      "language": "Langue"
+    },
+    "tools": {
+      "title": "Outils",
+      "exportData": "Exporter les données",
+      "exportDataHelp": "Téléchargez toutes vos données",
+      "clearCache": "Vider le cache",
+      "clearCacheHelp": "Vider le cache de l'application"
+    },
+    "reviewSettings": {
+      "title": "Paramètres des avis",
+      "autoApprove": { "title": "Approuver automatiquement tous les avis", "description": "Publier chaque nouvel avis immédiatement sans modération manuelle." },
+      "autoApproveVerified": { "title": "Approuver automatiquement les achats vérifiés", "description": "Publier automatiquement uniquement les avis des clients connectés." },
+      "requirePurchase": { "title": "Exiger un achat vérifié pour soumettre", "description": "Seuls les clients connectés peuvent laisser des avis. Réduit le spam." }
+    },
+    "spamProtection": {
+      "title": "Protection anti-spam",
+      "enable": { "title": "Activer la protection anti-spam", "description": "Rejeter automatiquement les avis trop courts ou contenant des mots interdits." },
+      "bannedWords": { "title": "Mots interdits", "description": "Liste séparée par des virgules. Les avis contenant ces mots seront automatiquement rejetés.", "label": "Mots", "placeholder": "spam, publicité, cliquez ici, achetez maintenant" },
+      "minLength": { "title": "Longueur minimale d'avis", "description": "Les avis plus courts que ce nombre de caractères seront rejetés.", "label": "Caractères minimum" }
+    },
+    "captcha": {
+      "title": "Protection CAPTCHA",
+      "enable": { "title": "Activer le CAPTCHA mathématique", "description": "Affiche un défi mathématique simple sur le formulaire d'avis. Vérifié côté serveur." }
+    },
+    "emailNotifications": {
+      "title": "Notifications par e-mail",
+      "notify": { "title": "Me notifier pour les nouveaux avis", "description": "Recevoir un e-mail chaque fois qu'un client soumet un avis." },
+      "emailLabel": "Adresse e-mail de notification",
+      "emailPlaceholder": "vous@votreboutique.com",
+      "reviewRequest": { "title": "Demandes d'avis après achat", "description": "Envoyer aux clients un e-mail après l'expédition de la commande pour demander un avis." },
+      "delayLabel": "Envoyer l'e-mail après l'expédition",
+      "delay1": "1 jour", "delay3": "3 jours", "delay5": "5 jours", "delay7": "7 jours", "delay14": "14 jours"
+    },
+    "importSection": { "title": "Importer des avis depuis CSV", "description": "Importation en masse d'avis depuis un fichier CSV.", "button": "Importer" },
+    "saveButton": "Enregistrer les paramètres",
+    "savedBanner": "Paramètres enregistrés avec succès"
+  }
+}

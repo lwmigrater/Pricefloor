@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Inicio",
+    "setupGuide": "Guía de configuración",
+    "setupDescription": "Usa esta guía personalizada para preparar tu tienda para las ventas.",
+    "stepsCompleted": "{{count}} de {{total}} pasos completados"
+  },
+  "list": {
+    "title": "Puzzles",
+    "createPuzzle": "Crear puzzle",
+    "exportPuzzles": "Exportar puzzles",
+    "importPuzzles": "Importar puzzles",
+    "emptyState": {
+      "title": "Empieza a crear puzzles",
+      "description": "Crea y gestiona tu colección de puzzles para que los jugadores disfruten.",
+      "learnMore": "Más información"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Piezas",
+      "created": "Creado",
+      "status": "Estado",
+      "active": "Activo",
+      "draft": "Borrador"
+    }
+  },
+  "detail": {
+    "title": "Vista de montaña",
+    "breadcrumb": "Puzzles",
+    "information": {
+      "title": "Información del puzzle",
+      "name": "Nombre del puzzle",
+      "namePlaceholder": "Introduce el nombre del puzzle",
+      "nameHelp": "Los jugadores verán este nombre al explorar puzzles.",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Breve descripción de tu puzzle",
+      "descriptionHelp": "Ayuda a los jugadores a entender qué incluye tu puzzle",
+      "price": "Precio",
+      "priceHelp": "Establece el precio de este puzzle",
+      "referenceUrl": "URL de imagen de referencia",
+      "referenceUrlHelp": "Enlace opcional a la imagen original"
+    },
+    "templates": {
+      "title": "Plantillas de puzzle",
+      "searchPlaceholder": "Buscar plantillas",
+      "preview": "Vista previa",
+      "remove": "Eliminar"
+    },
+    "settings": {
+      "title": "Configuración",
+      "size": "Tamaño del puzzle",
+      "pieceCount": "Número de piezas",
+      "material": "Material",
+      "quantity": "Cantidad en stock",
+      "quantityHelp": "Cantidad de inventario actual",
+      "includeReference": "Incluir imagen de referencia",
+      "includeReferenceHelp": "Enviar una imagen de referencia con el puzzle"
+    },
+    "summary": {
+      "title": "Resumen del puzzle",
+      "status": "Estado actual"
+    }
+  },
+  "subscriptions": {
+    "title": "Suscripciones",
+    "currentPlan": "Suscripción actual: {{plan}}",
+    "status": "Estado: {{status}} | Período termina: {{date}}",
+    "cancelSubscription": "Cancelar suscripción",
+    "cancelling": "Cancelando...",
+    "choosePlan": "Elige el plan perfecto para tu negocio",
+    "choosePlanDescription": "Opciones de precios flexibles para tus necesidades. Sube o baja de plan en cualquier momento.",
+    "free": {
+      "name": "Gratis",
+      "description": "Perfecto para empezar",
+      "price": "$0",
+      "perMonth": "/mes",
+      "features": {
+        "orders": "Hasta 100 pedidos/mes",
+        "analytics": "Analítica básica",
+        "support": "Soporte por email"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Para negocios en crecimiento",
+      "price": "$29",
+      "mostPopular": "Más popular",
+      "features": {
+        "orders": "Pedidos ilimitados",
+        "analytics": "Analítica avanzada",
+        "support": "Soporte prioritario",
+        "api": "Acceso a API"
+      },
+      "upgrade": "Actualizar a Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Para operaciones a gran escala",
+      "price": "$99",
+      "features": {
+        "everything": "Todo lo de Pro",
+        "manager": "Gestor de cuenta dedicado",
+        "phone": "Soporte telefónico 24/7",
+        "sla": "Garantía SLA"
+      },
+      "upgrade": "Actualizar a Enterprise"
+    },
+    "currentPlanButton": "Plan actual",
+    "helpSection": {
+      "title": "¿Necesitas ayuda para elegir?",
+      "description": "Nuestro equipo está aquí para ayudarte a encontrar el plan adecuado para tu negocio. Contáctanos para una consulta personalizada.",
+      "contact": "Contactar soporte",
+      "docs": "Ver documentación"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "storeInfo": {
+      "title": "Información de la tienda",
+      "name": "Nombre de la tienda",
+      "email": "Email de contacto",
+      "phone": "Número de teléfono",
+      "address": "Dirección de la tienda"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "emailNotifications": "Notificaciones por email",
+      "emailNotificationsHelp": "Recibe actualizaciones por email sobre tu cuenta",
+      "orderNotifications": "Notificaciones de pedidos",
+      "orderNotificationsHelp": "Recibe notificaciones cuando se realicen nuevos pedidos"
+    },
+    "preferences": {
+      "title": "Preferencias",
+      "timezone": "Zona horaria",
+      "currency": "Moneda",
+      "language": "Idioma"
+    },
+    "tools": {
+      "title": "Herramientas",
+      "exportData": "Exportar datos",
+      "exportDataHelp": "Descarga todos tus datos",
+      "clearCache": "Limpiar caché",
+      "clearCacheHelp": "Limpiar la caché de la aplicación"
+    },
+    "reviewSettings": {
+      "title": "Configuración de reseñas",
+      "autoApprove": { "title": "Aprobar todas las reseñas automáticamente", "description": "Publicar cada nueva reseña inmediatamente sin moderación manual." },
+      "autoApproveVerified": { "title": "Aprobar automáticamente las compras verificadas", "description": "Solo publicar automáticamente reseñas de clientes registrados." },
+      "requirePurchase": { "title": "Requerir compra verificada para enviar", "description": "Solo los clientes registrados pueden dejar reseñas. Reduce el spam." }
+    },
+    "spamProtection": {
+      "title": "Protección contra spam",
+      "enable": { "title": "Activar protección contra spam", "description": "Rechazar automáticamente reseñas demasiado cortas o con palabras prohibidas." },
+      "bannedWords": { "title": "Palabras prohibidas", "description": "Lista separada por comas. Las reseñas que contengan estas palabras serán rechazadas automáticamente.", "label": "Palabras", "placeholder": "spam, publicidad, haz clic aquí, compra ahora" },
+      "minLength": { "title": "Longitud mínima de reseña", "description": "Las reseñas más cortas que este número de caracteres serán rechazadas.", "label": "Caracteres mínimos" }
+    },
+    "captcha": {
+      "title": "Protección CAPTCHA",
+      "enable": { "title": "Activar CAPTCHA matemático", "description": "Muestra un desafío matemático simple en el formulario de reseña. Verificado en el servidor." }
+    },
+    "emailNotifications": {
+      "title": "Notificaciones por correo",
+      "notify": { "title": "Notificarme en nuevas reseñas", "description": "Recibir un correo cada vez que un cliente envíe una reseña." },
+      "emailLabel": "Dirección de correo de notificación",
+      "emailPlaceholder": "tu@tienda.com",
+      "reviewRequest": { "title": "Solicitudes de reseña post-compra", "description": "Enviar a los clientes un correo tras el cumplimiento del pedido pidiendo una reseña." },
+      "delayLabel": "Enviar correo después del cumplimiento",
+      "delay1": "1 día", "delay3": "3 días", "delay5": "5 días", "delay7": "7 días", "delay14": "14 días"
+    },
+    "importSection": { "title": "Importar reseñas desde CSV", "description": "Importación masiva de reseñas desde un archivo CSV.", "button": "Importar" },
+    "saveButton": "Guardar configuración",
+    "savedBanner": "Configuración guardada correctamente"
+  }
+}

@@ -1,0 +1,7 @@
+api_version = "2026-07"
+
+[[extensions]]
+name = "Pricefloor Bulk Quote"
+handle = "pricefloor-quote-form"
+uid = "ab5785b5-c16d-663e-c15a-1ac6cb21ae30c55fb228"
+type = "theme"

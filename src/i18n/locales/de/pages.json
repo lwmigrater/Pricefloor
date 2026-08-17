@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Startseite",
+    "setupGuide": "Einrichtungshandbuch",
+    "setupDescription": "Verwenden Sie diesen personalisierten Leitfaden, um Ihren Shop verkaufsbereit zu machen.",
+    "stepsCompleted": "{{count}} von {{total}} Schritten abgeschlossen"
+  },
+  "list": {
+    "title": "Puzzles",
+    "createPuzzle": "Puzzle erstellen",
+    "exportPuzzles": "Puzzles exportieren",
+    "importPuzzles": "Puzzles importieren",
+    "emptyState": {
+      "title": "Beginnen Sie mit der Erstellung von Puzzles",
+      "description": "Erstellen und verwalten Sie Ihre Puzzle-Sammlung für Spieler.",
+      "learnMore": "Mehr erfahren"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Teile",
+      "created": "Erstellt",
+      "status": "Status",
+      "active": "Aktiv",
+      "draft": "Entwurf"
+    }
+  },
+  "detail": {
+    "title": "Bergblick",
+    "breadcrumb": "Puzzles",
+    "information": {
+      "title": "Puzzle-Informationen",
+      "name": "Puzzle-Name",
+      "namePlaceholder": "Puzzle-Namen eingeben",
+      "nameHelp": "Spieler sehen diesen Namen beim Durchsuchen von Puzzles.",
+      "description": "Beschreibung",
+      "descriptionPlaceholder": "Kurze Beschreibung Ihres Puzzles",
+      "descriptionHelp": "Helfen Sie Spielern zu verstehen, was Ihr Puzzle beinhaltet",
+      "price": "Preis",
+      "priceHelp": "Legen Sie den Preis für dieses Puzzle fest",
+      "referenceUrl": "Referenzbild-URL",
+      "referenceUrlHelp": "Optionaler Link zum Originalbild"
+    },
+    "templates": {
+      "title": "Puzzle-Vorlagen",
+      "searchPlaceholder": "Vorlagen suchen",
+      "preview": "Vorschau",
+      "remove": "Entfernen"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "size": "Puzzle-Größe",
+      "pieceCount": "Teileanzahl",
+      "material": "Material",
+      "quantity": "Menge auf Lager",
+      "quantityHelp": "Aktuelle Lagerbestandsmenge",
+      "includeReference": "Referenzbild einschließen",
+      "includeReferenceHelp": "Ein Referenzbild mit dem Puzzle versenden"
+    },
+    "summary": {
+      "title": "Puzzle-Zusammenfassung",
+      "status": "Aktueller Status"
+    }
+  },
+  "subscriptions": {
+    "title": "Abonnements",
+    "currentPlan": "Aktuelles Abonnement: {{plan}}",
+    "status": "Status: {{status}} | Zeitraum endet: {{date}}",
+    "cancelSubscription": "Abonnement kündigen",
+    "cancelling": "Wird gekündigt...",
+    "choosePlan": "Wählen Sie den perfekten Plan für Ihr Unternehmen",
+    "choosePlanDescription": "Flexible Preisoptionen für Ihre Bedürfnisse. Jederzeit upgraden oder downgraden.",
+    "free": {
+      "name": "Kostenlos",
+      "description": "Perfekt für den Einstieg",
+      "price": "0 $",
+      "perMonth": "/Monat",
+      "features": {
+        "orders": "Bis zu 100 Bestellungen/Monat",
+        "analytics": "Grundlegende Analysen",
+        "support": "E-Mail-Support"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Für wachsende Unternehmen",
+      "price": "29 $",
+      "mostPopular": "Am beliebtesten",
+      "features": {
+        "orders": "Unbegrenzte Bestellungen",
+        "analytics": "Erweiterte Analysen",
+        "support": "Prioritäts-Support",
+        "api": "API-Zugang"
+      },
+      "upgrade": "Auf Pro upgraden"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Für große Betriebe",
+      "price": "99 $",
+      "features": {
+        "everything": "Alles in Pro",
+        "manager": "Dedizierter Account-Manager",
+        "phone": "24/7 Telefon-Support",
+        "sla": "SLA-Garantie"
+      },
+      "upgrade": "Auf Enterprise upgraden"
+    },
+    "currentPlanButton": "Aktueller Plan",
+    "helpSection": {
+      "title": "Brauchen Sie Hilfe bei der Auswahl?",
+      "description": "Unser Team hilft Ihnen, den richtigen Plan für Ihr Unternehmen zu finden. Kontaktieren Sie uns für eine persönliche Beratung.",
+      "contact": "Support kontaktieren",
+      "docs": "Dokumentation ansehen"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "storeInfo": {
+      "title": "Shop-Informationen",
+      "name": "Shop-Name",
+      "email": "Kontakt-E-Mail",
+      "phone": "Telefonnummer",
+      "address": "Shop-Adresse"
+    },
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "emailNotifications": "E-Mail-Benachrichtigungen",
+      "emailNotificationsHelp": "E-Mail-Updates zu Ihrem Konto erhalten",
+      "orderNotifications": "Bestellbenachrichtigungen",
+      "orderNotificationsHelp": "Benachrichtigt werden, wenn neue Bestellungen eingehen"
+    },
+    "preferences": {
+      "title": "Präferenzen",
+      "timezone": "Zeitzone",
+      "currency": "Währung",
+      "language": "Sprache"
+    },
+    "tools": {
+      "title": "Werkzeuge",
+      "exportData": "Daten exportieren",
+      "exportDataHelp": "Alle Ihre Daten herunterladen",
+      "clearCache": "Cache leeren",
+      "clearCacheHelp": "Anwendungs-Cache leeren"
+    },
+    "reviewSettings": {
+      "title": "Bewertungseinstellungen",
+      "autoApprove": { "title": "Alle Bewertungen automatisch genehmigen", "description": "Jede neue Bewertung sofort ohne manuelle Moderation veröffentlichen." },
+      "autoApproveVerified": { "title": "Verifizierte Käufe automatisch genehmigen", "description": "Nur Bewertungen von angemeldeten Kunden automatisch veröffentlichen." },
+      "requirePurchase": { "title": "Verifizierten Kauf für Abgabe erforderlich", "description": "Nur angemeldete Kunden können Bewertungen hinterlassen. Reduziert Spam." }
+    },
+    "spamProtection": {
+      "title": "Spam-Schutz",
+      "enable": { "title": "Spam-Schutz aktivieren", "description": "Bewertungen, die zu kurz sind oder verbotene Wörter enthalten, automatisch ablehnen." },
+      "bannedWords": { "title": "Verbotene Wörter", "description": "Kommagetrennte Liste. Bewertungen mit diesen Wörtern werden automatisch abgelehnt.", "label": "Wörter", "placeholder": "spam, werbung, hier klicken, jetzt kaufen" },
+      "minLength": { "title": "Mindestlänge der Bewertung", "description": "Bewertungen kürzer als diese Zeichenanzahl werden abgelehnt.", "label": "Mindestzeichen" }
+    },
+    "captcha": {
+      "title": "CAPTCHA-Schutz",
+      "enable": { "title": "Mathematisches CAPTCHA aktivieren", "description": "Zeigt eine einfache Mathematikaufgabe im Bewertungsformular. Serverseitig verifiziert." }
+    },
+    "emailNotifications": {
+      "title": "E-Mail-Benachrichtigungen",
+      "notify": { "title": "Bei neuen Bewertungen benachrichtigen", "description": "Eine E-Mail erhalten, wenn ein Kunde eine Bewertung abgibt." },
+      "emailLabel": "Benachrichtigungs-E-Mail-Adresse",
+      "emailPlaceholder": "sie@ihreshop.de",
+      "reviewRequest": { "title": "Bewertungsanfragen nach Kauf", "description": "Kunden nach dem Versand eine E-Mail schicken und um eine Bewertung bitten." },
+      "delayLabel": "E-Mail nach Versand senden",
+      "delay1": "1 Tag", "delay3": "3 Tage", "delay5": "5 Tage", "delay7": "7 Tage", "delay14": "14 Tage"
+    },
+    "importSection": { "title": "Bewertungen aus CSV importieren", "description": "Massenhafter Import von Bewertungen aus einer CSV-Datei.", "button": "Importieren" },
+    "saveButton": "Einstellungen speichern",
+    "savedBanner": "Einstellungen erfolgreich gespeichert"
+  }
+}

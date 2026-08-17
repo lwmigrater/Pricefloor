@@ -1,0 +1,156 @@
+{% comment %}
+  Pricefloor — inline "Request bulk quote" button.
+
+  A section-level app block. Merchants add this to their Product template
+  from the theme editor (Customize → open a product page → Add block → Apps
+  → Pricefloor Quote Button) and drag it right next to the Add to cart
+  button. Because it's a placed block (not app embed), it only appears where
+  the merchant put it — never as a floating button on every page.
+
+  This block is self-sufficient: it loads pricefloor-quote.js so the modal
+  works even when the "Pricefloor Bulk Quote" app embed is not enabled. The
+  embed is still needed for auto-open on quantity threshold. If both are
+  enabled, a double-init guard in the JS makes the second load a no-op.
+
+  Style: uses .pf-inline-btn defined in pricefloor-quote.css. Merchant can
+  override width (full/auto) and label from this block's settings.
+{% endcomment %}
+
+{{ 'pricefloor-quote.css' | asset_url | stylesheet_tag }}
+<script>
+  // Fallback config when the app embed is off. Auto-open stays disabled
+  // (no hasEmbed flag) so the button-only mode never surprises buyers.
+  window.PRICEFLOOR_CFG = window.PRICEFLOOR_CFG || {
+    proxyUrl: "/apps/pricefloor/quote",
+    currency: {{ shop.currency | json }},
+    customerId: {% if customer %}{{ customer.id | prepend: 'gid://shopify/Customer/' | json }}{% else %}null{% endif %},
+    customerEmail: {% if customer %}{{ customer.email | json }}{% else %}null{% endif %},
+    companyId: {% if customer.b2b? and customer.current_company %}{{ customer.current_company.id | prepend: 'gid://shopify/Company/' | json }}{% else %}null{% endif %},
+    modalTitle: "Request a bulk quote",
+    modalSubtitle: "Choose your quantity and preferred price. The store will review every request.",
+    accentColor: "#111827",
+    modalRadius: 14,
+    modalSurface: "#ffffff",
+    modalFg: "#101828",
+    modalMuted: "#667085",
+    modalBorder: "#ececef",
+    modalFieldBg: "#ffffff",
+    showProduct: true,
+    showTerms: true,
+    showTrust: true,
+    trustText: "No payment now · The store reviews every request",
+  };
+</script>
+<script src="{{ 'pricefloor-quote.js' | asset_url }}" defer></script>
+
+{%- assign pf_style   = block.settings.style             | default: 'outlined' -%}
+{%- assign pf_bg      = block.settings.background_color  | default: '#000000' -%}
+{%- assign pf_border  = block.settings.border_color      | default: '#000000' -%}
+{%- assign pf_text    = block.settings.text_color        | default: '#000000' -%}
+{%- assign pf_radius  = block.settings.border_radius     | default: 4 -%}
+{%- assign pf_label   = block.settings.label             | default: 'Request bulk quote' -%}
+
+{%- comment -%}
+  Product + variant context for the modal — only meaningful on product pages.
+  `product` and `product.selected_or_first_available_variant` are exposed by
+  Shopify when this block is placed on the Product template. Passing them
+  directly from Liquid avoids fragile DOM scans (theme-dependent selectors)
+  and gives the CTA the variant ID it needs to enable submission.
+
+  Price is emitted twice:
+    data-pf-product-price       → formatted string for the modal header
+    data-pf-variant-price       → raw cents integer for the engine payload
+{%- endcomment -%}
+{%- assign pf_variant = product.selected_or_first_available_variant -%}
+{%- assign pf_product_title  = product.title | default: '' -%}
+{%- assign pf_product_image  = product.featured_image | image_url: width: 200 | default: '' -%}
+{%- assign pf_product_price  = pf_variant.price | default: 0 | money -%}
+
+<div
+  class="pf-inline-wrap{% if block.settings.full_width %} pf-inline-wrap--full{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  <button
+    type="button"
+    class="pf-inline-btn pf-inline-btn--{{ pf_style }}{% if block.settings.full_width %} pf-inline-btn--full{% endif %}"
+    data-pf-label="{{ pf_label | escape }}"
+    data-pf-product-title="{{ pf_product_title | escape }}"
+    data-pf-product-image="{{ pf_product_image | escape }}"
+    data-pf-product-price="{{ pf_product_price | escape }}"
+    {% if pf_variant %}data-pf-variant-id="gid://shopify/ProductVariant/{{ pf_variant.id }}"{% endif %}
+    {% if pf_variant %}data-pf-variant-price="{{ pf_variant.price | divided_by: 100.0 }}"{% endif %}
+    style="--pf-bg: {{ pf_bg }}; --pf-border: {{ pf_border }}; --pf-text: {{ pf_text }}; --pf-radius: {{ pf_radius }}px;"
+    onclick="(function(btn){ var open = window.PricefloorQuote && window.PricefloorQuote.open; if (!open) { console.warn('[Pricefloor] Quote script not loaded yet — try again in a moment.'); return; } var vid = btn.getAttribute('data-pf-variant-id') || null; var basePriceRaw = btn.getAttribute('data-pf-variant-price'); var basePrice = basePriceRaw ? parseFloat(basePriceRaw) : null; var p = { title: btn.getAttribute('data-pf-product-title') || '', image: btn.getAttribute('data-pf-product-image') || '', price: btn.getAttribute('data-pf-product-price') || '' }; open({ title: btn.getAttribute('data-pf-label'), product: (p.title || p.image) ? p : null, context: vid ? { variantId: vid, basePrice: (basePrice && basePrice > 0) ? basePrice : null } : null }); })(this)"
+  >
+    {{ pf_label }}
+  </button>
+</div>
+
+{% schema %}
+{
+  "name": "Pricefloor Quote Button",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Button label",
+      "default": "Request bulk quote"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Match Add to cart width",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Design"
+    },
+    {
+      "type": "paragraph",
+      "content": "Modeled on Shopify Dawn's Add to cart / Buy it now buttons. Pick the style, tint, and roundness."
+    },
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        { "value": "outlined", "label": "Outlined (matches Add to cart)" },
+        { "value": "solid",    "label": "Solid (matches Buy it now)" }
+      ],
+      "default": "outlined"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "info": "Only used for Solid style. Outlined is always transparent.",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "info": "Label color for both styles. For a dark solid button, pick white.",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Corner radius",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    }
+  ]
+}
+{% endschema %}

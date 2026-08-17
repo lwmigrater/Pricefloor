@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Strona główna",
+    "setupGuide": "Przewodnik konfiguracji",
+    "setupDescription": "Skorzystaj z tego spersonalizowanego przewodnika, aby przygotować swój sklep do sprzedaży.",
+    "stepsCompleted": "Ukończono {{count}} z {{total}} kroków"
+  },
+  "list": {
+    "title": "Puzzle",
+    "createPuzzle": "Utwórz puzzle",
+    "exportPuzzles": "Eksportuj puzzle",
+    "importPuzzles": "Importuj puzzle",
+    "emptyState": {
+      "title": "Zacznij tworzyć puzzle",
+      "description": "Twórz i zarządzaj swoją kolekcją puzzli, które gracze będą mogli cieszyć.",
+      "learnMore": "Dowiedz się więcej"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Elementy",
+      "created": "Utworzono",
+      "status": "Status",
+      "active": "Aktywne",
+      "draft": "Szkic"
+    }
+  },
+  "detail": {
+    "title": "Widok góry",
+    "breadcrumb": "Puzzle",
+    "information": {
+      "title": "Informacje o puzzlach",
+      "name": "Nazwa puzzli",
+      "namePlaceholder": "Wprowadź nazwę puzzli",
+      "nameHelp": "Gracze zobaczą tę nazwę podczas przeglądania puzzli.",
+      "description": "Opis",
+      "descriptionPlaceholder": "Krótki opis Twoich puzzli",
+      "descriptionHelp": "Pomóż graczom zrozumieć, co zawierają Twoje puzzle",
+      "price": "Cena",
+      "priceHelp": "Ustaw cenę dla tych puzzli",
+      "referenceUrl": "URL obrazu referencyjnego",
+      "referenceUrlHelp": "Opcjonalny link do oryginalnego obrazu"
+    },
+    "templates": {
+      "title": "Szablony puzzli",
+      "searchPlaceholder": "Szukaj szablonów",
+      "preview": "Podgląd",
+      "remove": "Usuń"
+    },
+    "settings": {
+      "title": "Ustawienia",
+      "size": "Rozmiar puzzli",
+      "pieceCount": "Liczba elementów",
+      "material": "Materiał",
+      "quantity": "Ilość w magazynie",
+      "quantityHelp": "Aktualna ilość w magazynie",
+      "includeReference": "Dołącz obraz referencyjny",
+      "includeReferenceHelp": "Wysyłaj obraz referencyjny z puzzlami"
+    },
+    "summary": {
+      "title": "Podsumowanie puzzli",
+      "status": "Aktualny status"
+    }
+  },
+  "subscriptions": {
+    "title": "Subskrypcje",
+    "currentPlan": "Bieżąca subskrypcja: {{plan}}",
+    "status": "Status: {{status}} | Okres kończy się: {{date}}",
+    "cancelSubscription": "Anuluj subskrypcję",
+    "cancelling": "Anulowanie...",
+    "choosePlan": "Wybierz idealny plan dla swojego biznesu",
+    "choosePlanDescription": "Elastyczne opcje cenowe dostosowane do Twoich potrzeb. Możliwość zmiany planu w dowolnym momencie.",
+    "free": {
+      "name": "Bezpłatny",
+      "description": "Idealny na start",
+      "price": "$0",
+      "perMonth": "/miesiąc",
+      "features": {
+        "orders": "Do 100 zamówień/miesiąc",
+        "analytics": "Podstawowe analizy",
+        "support": "Wsparcie e-mail"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Dla rozwijających się firm",
+      "price": "$29",
+      "mostPopular": "Najpopularniejszy",
+      "features": {
+        "orders": "Nieograniczone zamówienia",
+        "analytics": "Zaawansowane analizy",
+        "support": "Wsparcie priorytetowe",
+        "api": "Dostęp do API"
+      },
+      "upgrade": "Przejdź na Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Dla dużych operacji",
+      "price": "$99",
+      "features": {
+        "everything": "Wszystko z Pro",
+        "manager": "Dedykowany opiekun konta",
+        "phone": "Wsparcie telefoniczne 24/7",
+        "sla": "Gwarancja SLA"
+      },
+      "upgrade": "Przejdź na Enterprise"
+    },
+    "currentPlanButton": "Bieżący plan",
+    "helpSection": {
+      "title": "Potrzebujesz pomocy w wyborze?",
+      "description": "Nasz zespół jest tutaj, aby pomóc Ci znaleźć odpowiedni plan dla Twojego biznesu. Skontaktuj się z nami w celu uzyskania spersonalizowanej konsultacji.",
+      "contact": "Skontaktuj się z pomocą",
+      "docs": "Zobacz dokumentację"
+    }
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "storeInfo": {
+      "title": "Informacje o sklepie",
+      "name": "Nazwa sklepu",
+      "email": "Kontaktowy e-mail",
+      "phone": "Numer telefonu",
+      "address": "Adres sklepu"
+    },
+    "notifications": {
+      "title": "Powiadomienia",
+      "emailNotifications": "Powiadomienia e-mail",
+      "emailNotificationsHelp": "Otrzymuj aktualizacje e-mail dotyczące swojego konta",
+      "orderNotifications": "Powiadomienia o zamówieniach",
+      "orderNotificationsHelp": "Otrzymuj powiadomienia po złożeniu nowych zamówień"
+    },
+    "preferences": {
+      "title": "Preferencje",
+      "timezone": "Strefa czasowa",
+      "currency": "Waluta",
+      "language": "Język"
+    },
+    "tools": {
+      "title": "Narzędzia",
+      "exportData": "Eksportuj dane",
+      "exportDataHelp": "Pobierz wszystkie swoje dane",
+      "clearCache": "Wyczyść pamięć podręczną",
+      "clearCacheHelp": "Wyczyść pamięć podręczną aplikacji"
+    },
+    "reviewSettings": {
+      "title": "Ustawienia opinii",
+      "autoApprove": { "title": "Automatycznie zatwierdzaj wszystkie opinie", "description": "Publikuj każdą nową opinię natychmiast bez ręcznej moderacji." },
+      "autoApproveVerified": { "title": "Automatycznie zatwierdzaj zweryfikowane zakupy", "description": "Automatycznie publikuj tylko opinie zalogowanych klientów." },
+      "requirePurchase": { "title": "Wymagaj zweryfikowanego zakupu do wysłania", "description": "Tylko zalogowani klienci mogą zostawiać opinie. Zmniejsza spam." }
+    },
+    "spamProtection": {
+      "title": "Ochrona przed spamem",
+      "enable": { "title": "Włącz ochronę przed spamem", "description": "Automatycznie odrzucaj opinie zbyt krótkie lub zawierające zakazane słowa." },
+      "bannedWords": { "title": "Zakazane słowa", "description": "Lista oddzielona przecinkami. Opinie zawierające te słowa będą automatycznie odrzucane.", "label": "Słowa", "placeholder": "spam, reklama, kliknij tutaj, kup teraz" },
+      "minLength": { "title": "Minimalna długość opinii", "description": "Opinie krótsze niż ta liczba znaków zostaną odrzucone.", "label": "Minimalna liczba znaków" }
+    },
+    "captcha": {
+      "title": "Ochrona CAPTCHA",
+      "enable": { "title": "Włącz matematyczne CAPTCHA", "description": "Wyświetla proste zadanie matematyczne w formularzu opinii. Weryfikowane po stronie serwera." }
+    },
+    "emailNotifications": {
+      "title": "Powiadomienia e-mail",
+      "notify": { "title": "Powiadamiaj mnie o nowych opiniach", "description": "Otrzymuj e-mail za każdym razem, gdy klient wyśle opinię." },
+      "emailLabel": "Adres e-mail powiadomień",
+      "emailPlaceholder": "ty@twojsklep.pl",
+      "reviewRequest": { "title": "Prośby o opinie po zakupie", "description": "Wyślij klientom e-mail po wysyłce zamówienia z prośbą o opinię." },
+      "delayLabel": "Wyślij e-mail po wysyłce",
+      "delay1": "1 dzień", "delay3": "3 dni", "delay5": "5 dni", "delay7": "7 dni", "delay14": "14 dni"
+    },
+    "importSection": { "title": "Importuj opinie z CSV", "description": "Masowy import opinii z pliku CSV.", "button": "Importuj" },
+    "saveButton": "Zapisz ustawienia",
+    "savedBanner": "Ustawienia zapisane pomyślnie"
+  }
+}

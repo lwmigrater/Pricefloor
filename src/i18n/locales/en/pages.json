@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Home",
+    "setupGuide": "Setup Guide",
+    "setupDescription": "Use this personalized guide to get your store ready for sales.",
+    "stepsCompleted": "{{count}} out of {{total}} steps completed"
+  },
+  "list": {
+    "title": "Puzzles",
+    "createPuzzle": "Create puzzle",
+    "exportPuzzles": "Export puzzles",
+    "importPuzzles": "Import puzzles",
+    "emptyState": {
+      "title": "Start creating puzzles",
+      "description": "Create and manage your collection of puzzles for players to enjoy.",
+      "learnMore": "Learn more"
+    },
+    "table": {
+      "puzzle": "Puzzle",
+      "pieces": "Pieces",
+      "created": "Created",
+      "status": "Status",
+      "active": "Active",
+      "draft": "Draft"
+    }
+  },
+  "detail": {
+    "title": "Mountain view",
+    "breadcrumb": "Puzzles",
+    "information": {
+      "title": "Puzzle information",
+      "name": "Puzzle name",
+      "namePlaceholder": "Enter puzzle name",
+      "nameHelp": "Players will see this name when browsing puzzles.",
+      "description": "Description",
+      "descriptionPlaceholder": "Brief description of your puzzle",
+      "descriptionHelp": "Help players understand what your puzzle features",
+      "price": "Price",
+      "priceHelp": "Set the price for this puzzle",
+      "referenceUrl": "Reference image URL",
+      "referenceUrlHelp": "Optional link to original image"
+    },
+    "templates": {
+      "title": "Puzzle templates",
+      "searchPlaceholder": "Search templates",
+      "preview": "Preview",
+      "remove": "Remove"
+    },
+    "settings": {
+      "title": "Settings",
+      "size": "Puzzle size",
+      "pieceCount": "Piece count",
+      "material": "Material",
+      "quantity": "Quantity in stock",
+      "quantityHelp": "Current inventory quantity",
+      "includeReference": "Include reference image",
+      "includeReferenceHelp": "Ship a reference image with the puzzle"
+    },
+    "summary": {
+      "title": "Puzzle summary",
+      "status": "Current status"
+    }
+  },
+  "subscriptions": {
+    "title": "Subscriptions",
+    "currentPlan": "Current Subscription: {{plan}}",
+    "status": "Status: {{status}} | Period ends: {{date}}",
+    "cancelSubscription": "Cancel Subscription",
+    "cancelling": "Cancelling...",
+    "choosePlan": "Choose the perfect plan for your business",
+    "choosePlanDescription": "Flexible pricing options to match your needs. Upgrade or downgrade at any time.",
+    "free": {
+      "name": "Free",
+      "description": "Perfect for getting started",
+      "price": "$0",
+      "perMonth": "/month",
+      "features": {
+        "orders": "Up to 100 orders/month",
+        "analytics": "Basic analytics",
+        "support": "Email support"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "For growing businesses",
+      "price": "$29",
+      "mostPopular": "Most Popular",
+      "features": {
+        "orders": "Unlimited orders",
+        "analytics": "Advanced analytics",
+        "support": "Priority support",
+        "api": "API access"
+      },
+      "upgrade": "Upgrade to Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "For large scale operations",
+      "price": "$99",
+      "features": {
+        "everything": "Everything in Pro",
+        "manager": "Dedicated account manager",
+        "phone": "24/7 phone support",
+        "sla": "SLA guarantee"
+      },
+      "upgrade": "Upgrade to Enterprise"
+    },
+    "currentPlanButton": "Current Plan",
+    "helpSection": {
+      "title": "Need help choosing?",
+      "description": "Our team is here to help you find the right plan for your business. Contact us for a personalized consultation.",
+      "contact": "Contact Support",
+      "docs": "View Documentation"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "storeInfo": {
+      "title": "Store Information",
+      "name": "Store name",
+      "email": "Contact email",
+      "phone": "Phone number",
+      "address": "Store address"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "emailNotifications": "Email notifications",
+      "emailNotificationsHelp": "Receive email updates about your account",
+      "orderNotifications": "Order notifications",
+      "orderNotificationsHelp": "Get notified when new orders are placed"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "timezone": "Timezone",
+      "currency": "Currency",
+      "language": "Language"
+    },
+    "tools": {
+      "title": "Tools",
+      "exportData": "Export data",
+      "exportDataHelp": "Download all your data",
+      "clearCache": "Clear cache",
+      "clearCacheHelp": "Clear application cache"
+    },
+    "reviewSettings": {
+      "title": "Review Settings",
+      "autoApprove": { "title": "Auto-approve all reviews", "description": "Publish every new review immediately without manual moderation." },
+      "autoApproveVerified": { "title": "Auto-approve verified purchases", "description": "Only auto-publish reviews from logged-in customers." },
+      "requirePurchase": { "title": "Require verified purchase to submit", "description": "Only logged-in customers can leave reviews. Reduces spam." }
+    },
+    "spamProtection": {
+      "title": "Spam Protection",
+      "enable": { "title": "Enable spam protection", "description": "Automatically reject reviews that are too short or contain banned words." },
+      "bannedWords": { "title": "Banned words", "description": "Comma-separated list. Reviews containing any of these words will be automatically rejected.", "label": "Words", "placeholder": "spam, advertisement, click here, buy now" },
+      "minLength": { "title": "Minimum review length", "description": "Reviews shorter than this character count will be rejected. Prevents one-word or empty reviews.", "label": "Minimum characters" }
+    },
+    "captcha": {
+      "title": "CAPTCHA Protection",
+      "enable": { "title": "Enable math CAPTCHA", "description": "Shows a simple math challenge on the review form (e.g. \"4 + 7 = ?\"). Verified server-side — no third-party service needed." }
+    },
+    "emailNotifications": {
+      "title": "Email Notifications",
+      "notify": { "title": "Notify me on new reviews", "description": "Receive an email each time a customer submits a new review." },
+      "emailLabel": "Notification email address",
+      "emailPlaceholder": "you@yourstore.com",
+      "reviewRequest": { "title": "Post-purchase review requests", "description": "Send customers an email after order fulfillment asking for a review. Requires RESEND_API_KEY." },
+      "delayLabel": "Send email after order fulfillment",
+      "delay1": "1 day", "delay3": "3 days", "delay5": "5 days", "delay7": "7 days", "delay14": "14 days"
+    },
+    "importSection": { "title": "Import reviews from CSV", "description": "Bulk import reviews from a CSV file.", "button": "Import" },
+    "saveButton": "Save settings",
+    "savedBanner": "Settings saved successfully"
+  }
+}

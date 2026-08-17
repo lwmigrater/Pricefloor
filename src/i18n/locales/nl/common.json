@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "list": "Lijst",
+    "detail": "Detail",
+    "subscriptions": "Abonnementen",
+    "settings": "Instellingen",
+    "reviews": "Beoordelingen",
+    "design": "Design"
+  },
+  "actions": {
+    "create": "Aanmaken",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "duplicate": "Dupliceren",
+    "export": "Exporteren",
+    "import": "Importeren",
+    "browse": "Bladeren",
+    "upload": "Uploaden",
+    "search": "Zoeken",
+    "filter": "Filteren",
+    "sort": "Sorteren"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "success": "Geslaagd",
+    "confirm": "Weet u het zeker?",
+    "yes": "Ja",
+    "no": "Nee",
+    "ok": "OK",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "submit": "Verzenden",
+    "reset": "Resetten"
+  },
+  "language": {
+    "select": "Taal selecteren",
+    "english": "Engels",
+    "turkish": "Turks",
+    "spanish": "Spaans",
+    "french": "Frans",
+    "german": "Duits",
+    "portuguese": "Portugees",
+    "italian": "Italiaans",
+    "dutch": "Nederlands",
+    "japanese": "Japans",
+    "chinese": "Chinees",
+    "korean": "Koreaans",
+    "polish": "Pools",
+    "arabic": "Arabisch"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "list": "القائمة",
+    "detail": "التفاصيل",
+    "subscriptions": "الاشتراكات",
+    "settings": "الإعدادات",
+    "reviews": "المراجعات",
+    "design": "التصميم"
+  },
+  "actions": {
+    "create": "إنشاء",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "duplicate": "تكرار",
+    "export": "تصدير",
+    "import": "استيراد",
+    "browse": "تصفح",
+    "upload": "رفع",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ",
+    "success": "نجاح",
+    "confirm": "هل أنت متأكد؟",
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "موافق",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "reset": "إعادة تعيين"
+  },
+  "language": {
+    "select": "اختر اللغة",
+    "english": "الإنجليزية",
+    "turkish": "التركية",
+    "spanish": "الإسبانية",
+    "french": "الفرنسية",
+    "german": "الألمانية",
+    "portuguese": "البرتغالية",
+    "italian": "الإيطالية",
+    "dutch": "الهولندية",
+    "japanese": "اليابانية",
+    "chinese": "الصينية",
+    "korean": "الكورية",
+    "polish": "البولندية",
+    "arabic": "العربية"
+  }
+}

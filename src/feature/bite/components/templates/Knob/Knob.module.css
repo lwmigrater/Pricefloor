@@ -1,0 +1,41 @@
+.knob {
+  position: relative;
+  width: 3rem;
+  height: 1.75rem;
+  background-color: var(--p-color-bg-surface-secondary);
+  border: 1px solid var(--p-color-border);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0;
+}
+
+.knob[data-selected="true"] {
+  background-color: var(--p-color-bg-fill-success);
+  border-color: var(--p-color-bg-fill-success);
+}
+
+.knobIndicator {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.375rem;
+  height: 1.375rem;
+  background-color: var(--p-color-bg-surface);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.knob[data-selected="true"] .knobIndicator {
+  transform: translateX(1.25rem);
+}
+
+.knob:hover {
+  opacity: 0.9;
+}
+
+.knob:focus {
+  outline: 2px solid var(--p-color-border-focus);
+  outline-offset: 2px;
+}

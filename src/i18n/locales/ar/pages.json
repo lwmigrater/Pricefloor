@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "الرئيسية",
+    "setupGuide": "دليل الإعداد",
+    "setupDescription": "استخدم هذا الدليل المخصص لتجهيز متجرك للمبيعات.",
+    "stepsCompleted": "تم إكمال {{count}} من أصل {{total}} خطوات"
+  },
+  "list": {
+    "title": "الألغاز",
+    "createPuzzle": "إنشاء لغز",
+    "exportPuzzles": "تصدير الألغاز",
+    "importPuzzles": "استيراد الألغاز",
+    "emptyState": {
+      "title": "ابدأ في إنشاء الألغاز",
+      "description": "قم بإنشاء وإدارة مجموعة الألغاز الخاصة بك ليستمتع بها اللاعبون.",
+      "learnMore": "اعرف المزيد"
+    },
+    "table": {
+      "puzzle": "اللغز",
+      "pieces": "القطع",
+      "created": "تاريخ الإنشاء",
+      "status": "الحالة",
+      "active": "نشط",
+      "draft": "مسودة"
+    }
+  },
+  "detail": {
+    "title": "منظر الجبل",
+    "breadcrumb": "الألغاز",
+    "information": {
+      "title": "معلومات اللغز",
+      "name": "اسم اللغز",
+      "namePlaceholder": "أدخل اسم اللغز",
+      "nameHelp": "سيرى اللاعبون هذا الاسم عند تصفح الألغاز.",
+      "description": "الوصف",
+      "descriptionPlaceholder": "وصف موجز للغزك",
+      "descriptionHelp": "ساعد اللاعبين على فهم محتوى لغزك",
+      "price": "السعر",
+      "priceHelp": "حدد سعر هذا اللغز",
+      "referenceUrl": "رابط الصورة المرجعية",
+      "referenceUrlHelp": "رابط اختياري للصورة الأصلية"
+    },
+    "templates": {
+      "title": "قوالب الألغاز",
+      "searchPlaceholder": "البحث عن القوالب",
+      "preview": "معاينة",
+      "remove": "إزالة"
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "size": "حجم اللغز",
+      "pieceCount": "عدد القطع",
+      "material": "المادة",
+      "quantity": "الكمية في المخزون",
+      "quantityHelp": "كمية المخزون الحالية",
+      "includeReference": "تضمين صورة مرجعية",
+      "includeReferenceHelp": "إرسال صورة مرجعية مع اللغز"
+    },
+    "summary": {
+      "title": "ملخص اللغز",
+      "status": "الحالة الحالية"
+    }
+  },
+  "subscriptions": {
+    "title": "الاشتراكات",
+    "currentPlan": "الاشتراك الحالي: {{plan}}",
+    "status": "الحالة: {{status}} | تنتهي الفترة: {{date}}",
+    "cancelSubscription": "إلغاء الاشتراك",
+    "cancelling": "جارٍ الإلغاء...",
+    "choosePlan": "اختر الخطة المثالية لعملك",
+    "choosePlanDescription": "خيارات أسعار مرنة تناسب احتياجاتك. ترقية أو تخفيض في أي وقت.",
+    "free": {
+      "name": "مجاني",
+      "description": "مثالي للبداية",
+      "price": "$0",
+      "perMonth": "/شهر",
+      "features": {
+        "orders": "حتى 100 طلب/شهر",
+        "analytics": "تحليلات أساسية",
+        "support": "دعم البريد الإلكتروني"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "للأعمال المتنامية",
+      "price": "$29",
+      "mostPopular": "الأكثر شعبية",
+      "features": {
+        "orders": "طلبات غير محدودة",
+        "analytics": "تحليلات متقدمة",
+        "support": "دعم ذو أولوية",
+        "api": "الوصول إلى API"
+      },
+      "upgrade": "الترقية إلى Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "للعمليات واسعة النطاق",
+      "price": "$99",
+      "features": {
+        "everything": "كل شيء في Pro",
+        "manager": "مدير حساب مخصص",
+        "phone": "دعم هاتفي 24/7",
+        "sla": "ضمان SLA"
+      },
+      "upgrade": "الترقية إلى Enterprise"
+    },
+    "currentPlanButton": "الخطة الحالية",
+    "helpSection": {
+      "title": "هل تحتاج إلى مساعدة في الاختيار؟",
+      "description": "فريقنا هنا لمساعدتك في العثور على الخطة المناسبة لعملك. تواصل معنا للحصول على استشارة مخصصة.",
+      "contact": "تواصل مع الدعم",
+      "docs": "عرض الوثائق"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "storeInfo": {
+      "title": "معلومات المتجر",
+      "name": "اسم المتجر",
+      "email": "البريد الإلكتروني للتواصل",
+      "phone": "رقم الهاتف",
+      "address": "عنوان المتجر"
+    },
+    "notifications": {
+      "title": "الإشعارات",
+      "emailNotifications": "إشعارات البريد الإلكتروني",
+      "emailNotificationsHelp": "تلقي تحديثات بريد إلكتروني حول حسابك",
+      "orderNotifications": "إشعارات الطلبات",
+      "orderNotificationsHelp": "الحصول على إشعار عند تقديم طلبات جديدة"
+    },
+    "preferences": {
+      "title": "التفضيلات",
+      "timezone": "المنطقة الزمنية",
+      "currency": "العملة",
+      "language": "اللغة"
+    },
+    "tools": {
+      "title": "الأدوات",
+      "exportData": "تصدير البيانات",
+      "exportDataHelp": "تنزيل جميع بياناتك",
+      "clearCache": "مسح ذاكرة التخزين المؤقت",
+      "clearCacheHelp": "مسح ذاكرة التخزين المؤقت للتطبيق"
+    },
+    "reviewSettings": {
+      "title": "إعدادات المراجعات",
+      "autoApprove": { "title": "الموافقة التلقائية على جميع المراجعات", "description": "نشر كل مراجعة جديدة فوراً دون مراجعة يدوية." },
+      "autoApproveVerified": { "title": "الموافقة التلقائية على المشتريات المتحقق منها", "description": "نشر مراجعات العملاء المسجلين تلقائياً فقط." },
+      "requirePurchase": { "title": "يتطلب الإرسال شراءً موثقاً", "description": "العملاء المسجلون فقط يمكنهم ترك المراجعات. يقلل من البريد المزعج." }
+    },
+    "spamProtection": {
+      "title": "الحماية من الرسائل المزعجة",
+      "enable": { "title": "تفعيل الحماية من الرسائل المزعجة", "description": "رفض المراجعات القصيرة جداً أو التي تحتوي على كلمات محظورة تلقائياً." },
+      "bannedWords": { "title": "الكلمات المحظورة", "description": "قائمة مفصولة بفواصل. المراجعات التي تحتوي على هذه الكلمات ستُرفض تلقائياً.", "label": "الكلمات", "placeholder": "بريد مزعج, إعلان, انقر هنا, اشتر الآن" },
+      "minLength": { "title": "الحد الأدنى لطول المراجعة", "description": "المراجعات الأقصر من هذا العدد من الأحرف ستُرفض.", "label": "الحد الأدنى من الأحرف" }
+    },
+    "captcha": {
+      "title": "حماية CAPTCHA",
+      "enable": { "title": "تفعيل CAPTCHA الرياضي", "description": "يعرض تحدياً رياضياً بسيطاً في نموذج المراجعة. التحقق يتم على الخادم." }
+    },
+    "emailNotifications": {
+      "title": "إشعارات البريد الإلكتروني",
+      "notify": { "title": "إشعاري بالمراجعات الجديدة", "description": "تلقي بريد إلكتروني في كل مرة يُرسل فيها عميل مراجعة." },
+      "emailLabel": "عنوان البريد الإلكتروني للإشعارات",
+      "emailPlaceholder": "you@yourstore.com",
+      "reviewRequest": { "title": "طلبات المراجعة بعد الشراء", "description": "إرسال بريد إلكتروني للعملاء بعد شحن الطلب يطلب منهم المراجعة." },
+      "delayLabel": "إرسال البريد الإلكتروني بعد الشحن",
+      "delay1": "يوم واحد", "delay3": "3 أيام", "delay5": "5 أيام", "delay7": "7 أيام", "delay14": "14 يوماً"
+    },
+    "importSection": { "title": "استيراد المراجعات من CSV", "description": "استيراد المراجعات بالجملة من ملف CSV.", "button": "استيراد" },
+    "saveButton": "حفظ الإعدادات",
+    "savedBanner": "تم حفظ الإعدادات بنجاح"
+  }
+}

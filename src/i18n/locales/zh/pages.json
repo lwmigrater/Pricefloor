@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "首页",
+    "setupGuide": "设置指南",
+    "setupDescription": "使用此个性化指南让您的商店做好销售准备。",
+    "stepsCompleted": "已完成 {{total}} 步中的 {{count}} 步"
+  },
+  "list": {
+    "title": "拼图",
+    "createPuzzle": "创建拼图",
+    "exportPuzzles": "导出拼图",
+    "importPuzzles": "导入拼图",
+    "emptyState": {
+      "title": "开始创建拼图",
+      "description": "创建和管理您的拼图集合，供玩家享受。",
+      "learnMore": "了解更多"
+    },
+    "table": {
+      "puzzle": "拼图",
+      "pieces": "拼片",
+      "created": "创建时间",
+      "status": "状态",
+      "active": "已激活",
+      "draft": "草稿"
+    }
+  },
+  "detail": {
+    "title": "山景",
+    "breadcrumb": "拼图",
+    "information": {
+      "title": "拼图信息",
+      "name": "拼图名称",
+      "namePlaceholder": "输入拼图名称",
+      "nameHelp": "玩家浏览拼图时会看到此名称。",
+      "description": "描述",
+      "descriptionPlaceholder": "拼图的简短描述",
+      "descriptionHelp": "帮助玩家了解您的拼图内容",
+      "price": "价格",
+      "priceHelp": "设置此拼图的价格",
+      "referenceUrl": "参考图片URL",
+      "referenceUrlHelp": "原始图片的可选链接"
+    },
+    "templates": {
+      "title": "拼图模板",
+      "searchPlaceholder": "搜索模板",
+      "preview": "预览",
+      "remove": "删除"
+    },
+    "settings": {
+      "title": "设置",
+      "size": "拼图尺寸",
+      "pieceCount": "拼片数量",
+      "material": "材料",
+      "quantity": "库存数量",
+      "quantityHelp": "当前库存数量",
+      "includeReference": "包含参考图片",
+      "includeReferenceHelp": "随拼图附上参考图片"
+    },
+    "summary": {
+      "title": "拼图摘要",
+      "status": "当前状态"
+    }
+  },
+  "subscriptions": {
+    "title": "订阅",
+    "currentPlan": "当前订阅：{{plan}}",
+    "status": "状态：{{status}} | 期限结束：{{date}}",
+    "cancelSubscription": "取消订阅",
+    "cancelling": "取消中...",
+    "choosePlan": "为您的业务选择完美方案",
+    "choosePlanDescription": "灵活的定价选项满足您的需求。随时升级或降级。",
+    "free": {
+      "name": "免费",
+      "description": "非常适合入门",
+      "price": "$0",
+      "perMonth": "/月",
+      "features": {
+        "orders": "每月最多100个订单",
+        "analytics": "基础分析",
+        "support": "邮件支持"
+      }
+    },
+    "pro": {
+      "name": "专业版",
+      "description": "适合成长中的业务",
+      "price": "$29",
+      "mostPopular": "最受欢迎",
+      "features": {
+        "orders": "无限订单",
+        "analytics": "高级分析",
+        "support": "优先支持",
+        "api": "API访问"
+      },
+      "upgrade": "升级到专业版"
+    },
+    "enterprise": {
+      "name": "企业版",
+      "description": "适合大规模运营",
+      "price": "$99",
+      "features": {
+        "everything": "专业版的一切",
+        "manager": "专属客户经理",
+        "phone": "24/7电话支持",
+        "sla": "SLA保证"
+      },
+      "upgrade": "升级到企业版"
+    },
+    "currentPlanButton": "当前方案",
+    "helpSection": {
+      "title": "需要帮助选择？",
+      "description": "我们的团队随时为您提供帮助，找到适合您业务的方案。联系我们获取个性化咨询。",
+      "contact": "联系支持",
+      "docs": "查看文档"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "storeInfo": {
+      "title": "商店信息",
+      "name": "商店名称",
+      "email": "联系邮箱",
+      "phone": "电话号码",
+      "address": "商店地址"
+    },
+    "notifications": {
+      "title": "通知",
+      "emailNotifications": "邮件通知",
+      "emailNotificationsHelp": "接收有关您账户的邮件更新",
+      "orderNotifications": "订单通知",
+      "orderNotificationsHelp": "有新订单时收到通知"
+    },
+    "preferences": {
+      "title": "偏好设置",
+      "timezone": "时区",
+      "currency": "货币",
+      "language": "语言"
+    },
+    "tools": {
+      "title": "工具",
+      "exportData": "导出数据",
+      "exportDataHelp": "下载所有数据",
+      "clearCache": "清除缓存",
+      "clearCacheHelp": "清除应用程序缓存"
+    },
+    "reviewSettings": {
+      "title": "评价设置",
+      "autoApprove": { "title": "自动批准所有评价", "description": "无需手动审核，立即发布每条新评价。" },
+      "autoApproveVerified": { "title": "自动批准已验证购买", "description": "仅自动发布已登录客户的评价。" },
+      "requirePurchase": { "title": "提交前需要验证购买", "description": "只有已登录的客户才能留下评价。减少垃圾信息。" }
+    },
+    "spamProtection": {
+      "title": "垃圾邮件保护",
+      "enable": { "title": "启用垃圾邮件保护", "description": "自动拒绝太短或包含禁用词的评价。" },
+      "bannedWords": { "title": "禁用词", "description": "逗号分隔列表。包含这些词的评价将被自动拒绝。", "label": "词语", "placeholder": "垃圾, 广告, 点击这里, 立即购买" },
+      "minLength": { "title": "最短评价长度", "description": "少于此字符数的评价将被拒绝。", "label": "最少字符数" }
+    },
+    "captcha": {
+      "title": "CAPTCHA保护",
+      "enable": { "title": "启用数学CAPTCHA", "description": "在评价表单上显示简单的数学题。服务器端验证。" }
+    },
+    "emailNotifications": {
+      "title": "电子邮件通知",
+      "notify": { "title": "新评价时通知我", "description": "每次客户提交评价时收到电子邮件。" },
+      "emailLabel": "通知电子邮件地址",
+      "emailPlaceholder": "you@yourstore.com",
+      "reviewRequest": { "title": "购买后评价请求", "description": "订单发货后向客户发送电子邮件请求评价。" },
+      "delayLabel": "发货后发送电子邮件",
+      "delay1": "1天后", "delay3": "3天后", "delay5": "5天后", "delay7": "7天后", "delay14": "14天后"
+    },
+    "importSection": { "title": "从CSV导入评价", "description": "从CSV文件批量导入评价。", "button": "导入" },
+    "saveButton": "保存设置",
+    "savedBanner": "设置已成功保存"
+  }
+}

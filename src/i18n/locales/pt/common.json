@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Início",
+    "list": "Lista",
+    "detail": "Detalhes",
+    "subscriptions": "Assinaturas",
+    "settings": "Configurações",
+    "reviews": "Avaliações",
+    "design": "Design"
+  },
+  "actions": {
+    "create": "Criar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "duplicate": "Duplicar",
+    "export": "Exportar",
+    "import": "Importar",
+    "browse": "Explorar",
+    "upload": "Enviar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "success": "Sucesso",
+    "confirm": "Tem certeza?",
+    "yes": "Sim",
+    "no": "Não",
+    "ok": "OK",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "reset": "Redefinir"
+  },
+  "language": {
+    "select": "Selecionar idioma",
+    "english": "Inglês",
+    "turkish": "Turco",
+    "spanish": "Espanhol",
+    "french": "Francês",
+    "german": "Alemão",
+    "portuguese": "Português",
+    "italian": "Italiano",
+    "dutch": "Holandês",
+    "japanese": "Japonês",
+    "chinese": "Chinês",
+    "korean": "Coreano",
+    "polish": "Polonês",
+    "arabic": "Árabe"
+  }
+}

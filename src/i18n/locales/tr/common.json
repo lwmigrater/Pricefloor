@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "list": "Liste",
+    "detail": "Detay",
+    "subscriptions": "Abonelikler",
+    "settings": "Ayarlar",
+    "reviews": "Yorumlar",
+    "design": "Tasarım"
+  },
+  "actions": {
+    "create": "Oluştur",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "duplicate": "Kopyala",
+    "export": "Dışa Aktar",
+    "import": "İçe Aktar",
+    "browse": "Gözat",
+    "upload": "Yükle",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı",
+    "confirm": "Emin misiniz?",
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "submit": "Gönder",
+    "reset": "Sıfırla"
+  },
+  "language": {
+    "select": "Dil Seçin",
+    "english": "İngilizce",
+    "turkish": "Türkçe",
+    "spanish": "İspanyolca",
+    "french": "Fransızca",
+    "german": "Almanca",
+    "portuguese": "Portekizce",
+    "italian": "İtalyanca",
+    "dutch": "Hollandaca",
+    "japanese": "Japonca",
+    "chinese": "Çince",
+    "korean": "Korece",
+    "polish": "Lehçe",
+    "arabic": "Arapça"
+  }
+}

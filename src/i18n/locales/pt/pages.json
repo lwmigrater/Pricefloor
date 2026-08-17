@@ -1,0 +1,174 @@
+{
+  "home": {
+    "title": "Início",
+    "setupGuide": "Guia de configuração",
+    "setupDescription": "Use este guia personalizado para preparar sua loja para vendas.",
+    "stepsCompleted": "{{count}} de {{total}} etapas concluídas"
+  },
+  "list": {
+    "title": "Quebra-cabeças",
+    "createPuzzle": "Criar quebra-cabeça",
+    "exportPuzzles": "Exportar quebra-cabeças",
+    "importPuzzles": "Importar quebra-cabeças",
+    "emptyState": {
+      "title": "Comece a criar quebra-cabeças",
+      "description": "Crie e gerencie sua coleção de quebra-cabeças para os jogadores aproveitarem.",
+      "learnMore": "Saiba mais"
+    },
+    "table": {
+      "puzzle": "Quebra-cabeça",
+      "pieces": "Peças",
+      "created": "Criado",
+      "status": "Status",
+      "active": "Ativo",
+      "draft": "Rascunho"
+    }
+  },
+  "detail": {
+    "title": "Vista da montanha",
+    "breadcrumb": "Quebra-cabeças",
+    "information": {
+      "title": "Informações do quebra-cabeça",
+      "name": "Nome do quebra-cabeça",
+      "namePlaceholder": "Digite o nome do quebra-cabeça",
+      "nameHelp": "Os jogadores verão esse nome ao navegar pelos quebra-cabeças.",
+      "description": "Descrição",
+      "descriptionPlaceholder": "Breve descrição do seu quebra-cabeça",
+      "descriptionHelp": "Ajude os jogadores a entender o que seu quebra-cabeça tem",
+      "price": "Preço",
+      "priceHelp": "Defina o preço deste quebra-cabeça",
+      "referenceUrl": "URL da imagem de referência",
+      "referenceUrlHelp": "Link opcional para a imagem original"
+    },
+    "templates": {
+      "title": "Modelos de quebra-cabeça",
+      "searchPlaceholder": "Pesquisar modelos",
+      "preview": "Visualizar",
+      "remove": "Remover"
+    },
+    "settings": {
+      "title": "Configurações",
+      "size": "Tamanho do quebra-cabeça",
+      "pieceCount": "Número de peças",
+      "material": "Material",
+      "quantity": "Quantidade em estoque",
+      "quantityHelp": "Quantidade atual de estoque",
+      "includeReference": "Incluir imagem de referência",
+      "includeReferenceHelp": "Enviar uma imagem de referência com o quebra-cabeça"
+    },
+    "summary": {
+      "title": "Resumo do quebra-cabeça",
+      "status": "Status atual"
+    }
+  },
+  "subscriptions": {
+    "title": "Assinaturas",
+    "currentPlan": "Assinatura atual: {{plan}}",
+    "status": "Status: {{status}} | Período termina em: {{date}}",
+    "cancelSubscription": "Cancelar assinatura",
+    "cancelling": "Cancelando...",
+    "choosePlan": "Escolha o plano perfeito para o seu negócio",
+    "choosePlanDescription": "Opções de preços flexíveis para suas necessidades. Atualize ou rebaixe a qualquer momento.",
+    "free": {
+      "name": "Gratuito",
+      "description": "Perfeito para começar",
+      "price": "R$ 0",
+      "perMonth": "/mês",
+      "features": {
+        "orders": "Até 100 pedidos/mês",
+        "analytics": "Análises básicas",
+        "support": "Suporte por e-mail"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Para negócios em crescimento",
+      "price": "R$ 149",
+      "mostPopular": "Mais popular",
+      "features": {
+        "orders": "Pedidos ilimitados",
+        "analytics": "Análises avançadas",
+        "support": "Suporte prioritário",
+        "api": "Acesso à API"
+      },
+      "upgrade": "Atualizar para Pro"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Para operações em grande escala",
+      "price": "R$ 499",
+      "features": {
+        "everything": "Tudo no Pro",
+        "manager": "Gerente de conta dedicado",
+        "phone": "Suporte telefônico 24/7",
+        "sla": "Garantia SLA"
+      },
+      "upgrade": "Atualizar para Enterprise"
+    },
+    "currentPlanButton": "Plano atual",
+    "helpSection": {
+      "title": "Precisa de ajuda para escolher?",
+      "description": "Nossa equipe está aqui para ajudá-lo a encontrar o plano certo para o seu negócio. Entre em contato para uma consulta personalizada.",
+      "contact": "Contatar suporte",
+      "docs": "Ver documentação"
+    }
+  },
+  "settings": {
+    "title": "Configurações",
+    "storeInfo": {
+      "title": "Informações da loja",
+      "name": "Nome da loja",
+      "email": "E-mail de contato",
+      "phone": "Número de telefone",
+      "address": "Endereço da loja"
+    },
+    "notifications": {
+      "title": "Notificações",
+      "emailNotifications": "Notificações por e-mail",
+      "emailNotificationsHelp": "Receba atualizações por e-mail sobre sua conta",
+      "orderNotifications": "Notificações de pedidos",
+      "orderNotificationsHelp": "Seja notificado quando novos pedidos forem feitos"
+    },
+    "preferences": {
+      "title": "Preferências",
+      "timezone": "Fuso horário",
+      "currency": "Moeda",
+      "language": "Idioma"
+    },
+    "tools": {
+      "title": "Ferramentas",
+      "exportData": "Exportar dados",
+      "exportDataHelp": "Baixe todos os seus dados",
+      "clearCache": "Limpar cache",
+      "clearCacheHelp": "Limpar o cache do aplicativo"
+    },
+    "reviewSettings": {
+      "title": "Configurações de avaliações",
+      "autoApprove": { "title": "Aprovar todas as avaliações automaticamente", "description": "Publicar cada nova avaliação imediatamente sem moderação manual." },
+      "autoApproveVerified": { "title": "Aprovar automaticamente compras verificadas", "description": "Publicar automaticamente apenas avaliações de clientes logados." },
+      "requirePurchase": { "title": "Exigir compra verificada para enviar", "description": "Apenas clientes logados podem deixar avaliações. Reduz spam." }
+    },
+    "spamProtection": {
+      "title": "Proteção contra spam",
+      "enable": { "title": "Ativar proteção contra spam", "description": "Rejeitar automaticamente avaliações muito curtas ou com palavras proibidas." },
+      "bannedWords": { "title": "Palavras proibidas", "description": "Lista separada por vírgulas. Avaliações com essas palavras serão automaticamente rejeitadas.", "label": "Palavras", "placeholder": "spam, publicidade, clique aqui, compre agora" },
+      "minLength": { "title": "Comprimento mínimo de avaliação", "description": "Avaliações mais curtas que este número de caracteres serão rejeitadas.", "label": "Caracteres mínimos" }
+    },
+    "captcha": {
+      "title": "Proteção CAPTCHA",
+      "enable": { "title": "Ativar CAPTCHA matemático", "description": "Exibe um desafio matemático simples no formulário de avaliação. Verificado no servidor." }
+    },
+    "emailNotifications": {
+      "title": "Notificações por e-mail",
+      "notify": { "title": "Notificar-me em novas avaliações", "description": "Receber um e-mail cada vez que um cliente enviar uma avaliação." },
+      "emailLabel": "Endereço de e-mail de notificação",
+      "emailPlaceholder": "voce@sujaloja.com",
+      "reviewRequest": { "title": "Solicitações de avaliação pós-compra", "description": "Enviar aos clientes um e-mail após o envio do pedido pedindo uma avaliação." },
+      "delayLabel": "Enviar e-mail após envio",
+      "delay1": "1 dia", "delay3": "3 dias", "delay5": "5 dias", "delay7": "7 dias", "delay14": "14 dias"
+    },
+    "importSection": { "title": "Importar avaliações de CSV", "description": "Importação em massa de avaliações de um arquivo CSV.", "button": "Importar" },
+    "saveButton": "Salvar configurações",
+    "savedBanner": "Configurações salvas com sucesso"
+  }
+}
