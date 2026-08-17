@@ -157,7 +157,9 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       currencyCode: "USD",
       interval: "MONTHLY",
       trialDays,
-      test: process.env.NODE_ENV !== "production",
+      // Live Shopify billing must be the default. Enable test charges only
+      // explicitly for local/staging environments.
+      test: process.env.BILLING_TEST_MODE === "true",
       shop: session.shop,
     });
 
