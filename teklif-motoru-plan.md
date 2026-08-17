@@ -505,7 +505,7 @@ Beklenen response:
 
 ### 15.6 Cron doğrulama
 
-- Vercel Deploy → Functions → Crons: iki job listede `pricefloor-sla-reminders` (0 * * * *) ve `pricefloor-expired-quotes` (15 * * * *)
+- Supabase → Integrations → Cron: iki job listede `pricefloor-sla-reminders` (0 * * * *) ve `pricefloor-expired-quotes` (15 * * * *). Her iki çağrı da Vault'taki `pricefloor_cron_secret` ile yetkilendirilir.
 - Manuel tetikle:
 
 ```bash

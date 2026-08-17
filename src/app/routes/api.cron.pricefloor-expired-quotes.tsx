@@ -3,7 +3,7 @@
  *
  *   GET /api/cron/pricefloor-expired-quotes
  *
- * Scheduled hourly by vercel.json. For each decision whose expires_at is in
+ * Scheduled hourly by Supabase pg_cron. For each decision whose expires_at is in
  * the past and which has NOT yet been marked expired in pf_audit_log:
  *   1. Append "pricefloor:expired" tag to the Shopify draft order.
  *   2. Emit a `quote_expired` audit event (which is also the idempotency
