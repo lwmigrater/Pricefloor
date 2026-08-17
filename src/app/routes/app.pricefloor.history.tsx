@@ -22,6 +22,7 @@ import supabase from "@/adapters/supabase/supabase.server";
 import { companyService } from "@/feature/bite/services/company.service";
 import { createDraftOrder, sendDraftOrderInvoice } from "@/feature/pricefloor/adapters/shopify/draft-order.shopify";
 import { resolveEscalation } from "@/feature/pricefloor/adapters/supabase/escalation.repository";
+import { checkCompanyLimit } from "@/feature/pricefloor/services/plan-gate.service";
 import {
   listQuoteDecisions,
   markDecisionFulfilled,
@@ -70,6 +71,11 @@ export const action = async ({ request }: ActionFunctionArgs) => {
   if (error || !row) return Response.json({ ok: false, error: "Quote not found." }, { status: 404 });
 
   const output = row.output as QuoteDecisionRow["output"];
+  const requestRow = row.pf_quote_requests as unknown as { raw_input?: { shopifyCustomerEmail?: string }; shopify_company_id?: string | null };
+  const gate = await checkCompanyLimit(company.id, requestRow.shopify_company_id ?? null);
+  if (!gate.ok) {
+    return Response.json({ ok: false, error: "This buyer company is outside your plan limit. Upgrade before approving this quote." }, { status: 402 });
+  }
   if (intent === "manualOffer") {
     if (output.lines.length !== 1)
       return Response.json({ ok: false, error: "Multi-product quotes require a price for each product." }, { status: 400 });
@@ -81,7 +87,6 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       return Response.json({ ok: false, error: "Offer cannot be below unit cost." }, { status: 400 });
     if (line.basePrice != null && unitPrice > line.basePrice)
       return Response.json({ ok: false, error: "Offer cannot exceed the list price." }, { status: 400 });
-    const requestRow = row.pf_quote_requests as unknown as { raw_input?: { shopifyCustomerEmail?: string }; shopify_company_id?: string | null };
     const draft = await createDraftOrder(admin, {
       currencyCode: output.currency,
       email: requestRow.raw_input?.shopifyCustomerEmail ?? null,

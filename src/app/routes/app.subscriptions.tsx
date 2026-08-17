@@ -45,17 +45,21 @@ interface Plan {
 interface UsageRow { feature: string; used_count: number }
 
 const FEATURE_META: Record<string, { label: string; icon: typeof StarFilledIcon }> = {
-  emails:        { label: "Emails / month",    icon: EmailIcon },
-  reviews:       { label: "Reviews / month",   icon: StarFilledIcon },
-  faq_questions: { label: "FAQ questions",     icon: QuestionCircleIcon },
-  offers:        { label: "Upsell offers",     icon: CashDollarIcon },
+  companies: { label: "Active B2B companies", icon: QuestionCircleIcon },
 };
 
 const PLAN_HIGHLIGHTS: Record<string, string[]> = {
-  free:      ["100 emails", "50 reviews", "10 FAQ questions", "3 offers", "Review request emails (delayed)", "Basic analytics", "Community support"],
-  starter:   ["1 000 emails", "500 reviews", "50 FAQ questions", "20 offers", "Review request emails (delayed)", "Advanced analytics", "Email support"],
-  pro:       ["5 000 emails", "Unlimited reviews", "Unlimited FAQs", "Unlimited offers", "Review request emails + Send immediately", "Priority support", "CSV export"],
-  unlimited: ["Unlimited everything", "Review request emails + Send immediately", "Dedicated support", "SLA guarantee", "Custom integrations", "Onboarding call"],
+  free: ["Up to 3 active B2B companies", "Rule-based quote decisions", "Shopify product and cost sync", "Draft orders and invoice checkout", "Quote history and manual review"],
+  starter: ["Up to 25 active B2B companies", "Rule-based quote decisions", "Shopify product and cost sync", "Draft orders and invoice checkout", "Quote history and manual review"],
+  growth: ["Up to 100 active B2B companies", "Everything in Starter", "Automated escalation workflow", "Inventory-aware pricing decisions", "B2B quote history and audit trail"],
+  scale: ["Unlimited active B2B companies", "Everything in Growth", "Unlimited company coverage", "Priority operational capacity", "Designed for larger B2B catalogs"],
+};
+
+const PLAN_DESCRIPTIONS: Record<string, string> = {
+  free: "Try the complete Pricefloor workflow with a small company limit.",
+  starter: "For stores starting with a focused B2B quote workflow.",
+  growth: "For growing B2B catalogs and more active buying companies.",
+  scale: "For larger B2B operations with unlimited company coverage.",
 };
 
 type CompRow =
@@ -64,42 +68,20 @@ type CompRow =
 
 const COMPARISON: Array<{ title: string; rows: CompRow[] }> = [
   {
-    title: "Usage limits",
+    title: "Pricefloor limits",
     rows: [
-      { type: "dynamic", key: "emails" },
-      { type: "dynamic", key: "reviews" },
-      { type: "dynamic", key: "faq_questions" },
-      { type: "dynamic", key: "offers" },
+      { type: "dynamic", key: "companies" },
     ],
   },
   {
-    title: "Features",
+    title: "Included in every plan",
     rows: [
-      { type: "static", label: "Analytics dashboard",         values: { free: "Basic",    starter: "Advanced", pro: "Advanced", unlimited: "Advanced" } },
-      { type: "static", label: "Review request emails",       values: { free: true,       starter: true,       pro: true,       unlimited: true       } },
-      { type: "static", label: "Send immediately (0-day delay)", values: { free: false,   starter: false,      pro: true,       unlimited: true       } },
-      { type: "static", label: "A/B testing",                 values: { free: false,      starter: false,      pro: true,       unlimited: true       } },
-      { type: "static", label: "CSV / data export",           values: { free: false,      starter: false,      pro: true,       unlimited: true       } },
-      { type: "static", label: "Custom integrations",         values: { free: false,      starter: false,      pro: false,      unlimited: true       } },
-      { type: "static", label: "White-label branding",        values: { free: false,      starter: false,      pro: false,      unlimited: true       } },
-      { type: "static", label: "API access",                  values: { free: false,      starter: false,      pro: true,       unlimited: true       } },
-    ],
-  },
-  {
-    title: "Support",
-    rows: [
-      { type: "static", label: "Support channel",   values: { free: "Community forum", starter: "Email", pro: "Priority email", unlimited: "Dedicated rep" } },
-      { type: "static", label: "Response time",     values: { free: "Best effort",     starter: "2 business days", pro: "1 business day", unlimited: "4 hours" } },
-      { type: "static", label: "SLA guarantee",     values: { free: false, starter: false, pro: false, unlimited: true } },
-      { type: "static", label: "Onboarding call",   values: { free: false, starter: false, pro: false, unlimited: true } },
-    ],
-  },
-  {
-    title: "All plans include",
-    rows: [
-      { type: "static", label: "7-day free trial",        values: { free: true, starter: true, pro: true, unlimited: true } },
-      { type: "static", label: "No credit card required", values: { free: true, starter: true, pro: true, unlimited: true } },
-      { type: "static", label: "Cancel anytime",          values: { free: true, starter: true, pro: true, unlimited: true } },
+      { type: "static", label: "Shopify checkout via draft orders", values: { free: true, starter: true, growth: true, scale: true } },
+      { type: "static", label: "Merchant-configured pricing rules", values: { free: true, starter: true, growth: true, scale: true } },
+      { type: "static", label: "Cost and inventory-aware decisions", values: { free: true, starter: true, growth: true, scale: true } },
+      { type: "static", label: "Quote history and audit trail", values: { free: true, starter: true, growth: true, scale: true } },
+      { type: "static", label: "7-day free trial on paid plans", values: { free: false, starter: true, growth: true, scale: true } },
+      { type: "static", label: "Cancel anytime", values: { free: true, starter: true, growth: true, scale: true } },
     ],
   },
 ];
@@ -369,7 +351,7 @@ export default function Subscriptions() {
         {/* ── Success / Error banners ── */}
         {fetcher.data?.success && (
           <Banner title="Subscription cancelled" tone="info">
-            <Text as="p" variant="bodyMd">You've been moved to the Free plan.</Text>
+            <Text as="p" variant="bodyMd">Your paid subscription was cancelled. Starter limits now apply.</Text>
           </Banner>
         )}
         {fetcher.data?.error && (
@@ -388,12 +370,12 @@ export default function Subscriptions() {
                     <Text as="h2" variant="headingMd">Current plan</Text>
                     <Text as="p" variant="bodySm" tone="subdued">{month}</Text>
                   </BlockStack>
-                  <Badge tone={currentPlanId === "free" ? "new" : "success"}>
-                    {currentPlan?.display_name ?? "Free"}
+                  <Badge tone="success">
+                    {currentPlan?.display_name ?? "Starter"}
                   </Badge>
                 </InlineStack>
 
-                {currentPlanId !== "free" && (
+                {activeSubscription && (
                   <BlockStack gap="100">
                     <InlineStack gap="200" blockAlign="center">
                       <Text as="p" variant="bodyMd" fontWeight="semibold">
@@ -413,9 +395,9 @@ export default function Subscriptions() {
 
                 <Divider />
 
-                {currentPlanId === "free" ? (
+                {!activeSubscription ? (
                   <Text as="p" variant="bodySm" tone="subdued">
-                    Upgrade to unlock higher limits and priority support.
+                    You are using the Free plan with a limit of 3 active B2B companies.
                   </Text>
                 ) : (
                   <Button
@@ -473,15 +455,15 @@ export default function Subscriptions() {
         <BlockStack gap="300">
           <Text as="h2" variant="headingLg">Choose your plan</Text>
           <Text as="p" variant="bodyMd" tone="subdued">
-            All plans include a 7-day free trial. No credit card required to start.
+            Free includes the complete workflow for up to 3 active B2B companies. Upgrade when your catalog grows.
           </Text>
         </BlockStack>
 
         {/* Paid plans — 3-column grid */}
-        <InlineGrid columns={{ xs: 1, sm: 3 }} gap="400">
-          {plans.filter((p) => p.id !== "free").map((plan) => {
+        <InlineGrid columns={{ xs: 1, sm: 4 }} gap="400">
+          {plans.map((plan) => {
             const isCurrent  = plan.id === currentPlanId;
-            const isPopular  = plan.id === "pro";
+            const isPopular  = plan.id === "growth";
             const highlights = PLAN_HIGHLIGHTS[plan.id] ?? [];
 
             return (
@@ -535,6 +517,10 @@ export default function Subscriptions() {
 
                   <Divider />
 
+                  <Text as="p" variant="bodySm" tone="subdued">
+                    {PLAN_DESCRIPTIONS[plan.id] ?? "Pricefloor B2B quoting tools for your Shopify store."}
+                  </Text>
+
                   {/* Features left-aligned */}
                   <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", alignItems: "center", gap: "10px 8px" }}>
                     {highlights.flatMap((f, i) => [
@@ -572,61 +558,6 @@ export default function Subscriptions() {
             );
           })}
         </InlineGrid>
-
-        {/* Free plan — full-width horizontal card */}
-        {(() => {
-          const free       = plans.find((p) => p.id === "free");
-          const isCurrent  = currentPlanId === "free";
-          const highlights = PLAN_HIGHLIGHTS["free"] ?? [];
-          if (!free) return null;
-          return (
-            <div
-              style={{
-                border: isCurrent
-                  ? "2px solid var(--p-color-border-brand)"
-                  : "1px solid var(--p-color-border)",
-                borderRadius: "var(--p-border-radius-300)",
-                padding: "var(--p-space-500)",
-                background: "var(--p-color-bg-surface)",
-                display: "flex",
-                gap: "var(--p-space-600)",
-                alignItems: "center",
-              }}
-            >
-              {/* Left: name + badge */}
-              <div style={{ minWidth: "140px" }}>
-                <BlockStack gap="150">
-                  {isCurrent && <Badge tone="success">Current plan</Badge>}
-                  <Text as="h3" variant="headingLg">Free</Text>
-                  <Text as="p" variant="heading2xl" fontWeight="bold">$0</Text>
-                </BlockStack>
-              </div>
-
-              <div style={{ width: "1px", alignSelf: "stretch", background: "var(--p-color-border)" }} />
-
-              {/* Middle: 2-column features */}
-              <div style={{ flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px 24px" }}>
-                {highlights.map((f, i) => (
-                  <div key={i} style={{ display: "grid", gridTemplateColumns: "auto 1fr", alignItems: "center", gap: "8px" }}>
-                    <div style={{ display: "flex" }}><Icon source={CheckIcon} tone="success" /></div>
-                    <span style={{ fontSize: "14px" }}>{f}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Right: CTA */}
-              <div style={{ minWidth: "160px" }}>
-                {isCurrent ? (
-                  <Button disabled fullWidth>Current plan</Button>
-                ) : (
-                  <Button fullWidth loading={isCancelling} onClick={() => handleDowngradeClick("free", "Free", () => setShowCancelModal(true))}>
-                    Downgrade to Free
-                  </Button>
-                )}
-              </div>
-            </div>
-          );
-        })()}
 
         {/* ── Feature comparison table ── */}
         <Card>
@@ -764,7 +695,7 @@ export default function Subscriptions() {
       >
         <Modal.Section>
           <Text as="p" variant="bodyMd">
-            Your subscription will be cancelled immediately and you'll be moved to the Free plan. This action cannot be undone.
+            Your subscription will be cancelled immediately. The app will fall back to the Free plan (3 active B2B companies). This action cannot be undone.
           </Text>
         </Modal.Section>
       </Modal>

@@ -233,6 +233,7 @@ DELETE FROM plan_limits;
 DELETE FROM subscription_plans;
 
 INSERT INTO subscription_plans (id, display_name, price_usd, sort_order) VALUES
+  ('free',    'Free',      0.00, 0),
   ('starter', 'Starter',  49.00, 1),
   ('growth',  'Growth',   99.00, 2),
   ('scale',   'Scale',   199.00, 3);
@@ -240,14 +241,15 @@ INSERT INTO subscription_plans (id, display_name, price_usd, sort_order) VALUES
 -- Pricefloor plan gating uses feature='companies' (total active B2B
 -- companies scoped to this shop). -1 = unlimited.
 INSERT INTO plan_limits (plan_id, feature, monthly_cap) VALUES
+  ('free',    'companies',   3),
   ('starter', 'companies',  25),
   ('growth',  'companies', 100),
   ('scale',   'companies',  -1);
 
-ALTER TABLE company ALTER COLUMN plan_id SET DEFAULT 'starter';
+ALTER TABLE company ALTER COLUMN plan_id SET DEFAULT 'free';
 
 -- Backfill any pre-existing rows to the new default
-UPDATE company SET plan_id = 'starter' WHERE plan_id NOT IN ('starter', 'growth', 'scale');
+UPDATE company SET plan_id = 'free' WHERE plan_id NOT IN ('free', 'starter', 'growth', 'scale');
 
 -- ── Comments ─────────────────────────────────────────────────
 COMMENT ON TABLE pf_rule_sets IS
