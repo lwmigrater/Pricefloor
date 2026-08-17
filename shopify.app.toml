@@ -2,7 +2,7 @@
 
 client_id = "c22c63f39166c7655dac1142de8edd8f"
 name = "Suite360: Pricefloor"
-application_url = "https://shopify.dev/apps/default-app-home"
+application_url = "https://pricefloor.vysyzdev.com"
 embedded = true
 
 [access_scopes]
@@ -10,14 +10,14 @@ embedded = true
 scopes = "read_products,read_inventory,write_inventory,read_customers,read_companies,write_companies,read_draft_orders,write_draft_orders,read_orders"
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+redirect_urls = [ "https://pricefloor.vysyzdev.com/api/auth" ]
 
 [app_proxy]
 # Buyer storefront URL: /apps/pricefloor/<rest>. Shopify strips prefix + subpath
 # and appends /<rest> to this URL's path. `shopify app dev` swaps the host for
 # the tunnel; the PATH must match the route tree. /api/proxy/pricefloor/quote
 # maps to routes/api.proxy.pricefloor.quote.tsx.
-url = "https://shopify.dev/api/proxy/pricefloor"
+url = "https://pricefloor.vysyzdev.com/api/proxy/pricefloor"
 subpath = "pricefloor"
 prefix = "apps"
 
