@@ -343,14 +343,18 @@ export default function Dashboard() {
                       legendPosition="right"
                       data={[
                         {
-                          name: "Decisions",
-                          data: [
-                            { key: "Approved", value: stats.autoApproved },
-                            { key: "Counter offer", value: stats.counterOffers },
-                            { key: "Escalated", value: stats.escalations },
-                          ].filter((slice) => slice.value > 0),
+                          name: "Approved",
+                          data: [{ key: "Approved", value: stats.autoApproved }],
                         },
-                      ]}
+                        {
+                          name: "Counter offer",
+                          data: [{ key: "Counter offer", value: stats.counterOffers }],
+                        },
+                        {
+                          name: "Escalated",
+                          data: [{ key: "Escalated", value: stats.escalations }],
+                        },
+                      ].filter((series) => series.data[0].value > 0)}
                     />
                   ) : (
                     <ChartPlaceholder />
