@@ -2,6 +2,7 @@
  * Plan gate — enforce the "active companies" cap per Pricefloor plan.
  *
  * Semantics (plan §10):
+ *   free    → 3 companies
  *   starter → 25 companies
  *   growth  → 100 companies
  *   scale   → unlimited (monthly_cap = -1)
