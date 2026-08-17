@@ -10,7 +10,7 @@ embedded = true
 scopes = "read_products,read_inventory,write_inventory,read_customers,read_companies,write_companies,read_draft_orders,write_draft_orders,read_orders"
 
 [auth]
-redirect_urls = [ "https://pricefloor.vysyzdev.com/api/auth" ]
+redirect_urls = [ "https://pricefloor.vysyzdev.com/auth/callback" ]
 
 [app_proxy]
 # Buyer storefront URL: /apps/pricefloor/<rest>. Shopify strips prefix + subpath
